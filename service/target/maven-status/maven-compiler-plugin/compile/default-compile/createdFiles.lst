@@ -1,0 +1,6 @@
+com\epam\igor\config\SecurityWebApplicationInitializer.class
+com\epam\igor\config\WebSecurityConfig.class
+com\epam\igor\exception\ServiceException.class
+com\epam\igor\security\UserDetailsServiceImpl.class
+com\epam\igor\impl\UserServiceImpl.class
+com\epam\igor\api\UserService.class
