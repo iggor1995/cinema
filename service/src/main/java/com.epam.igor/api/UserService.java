@@ -17,4 +17,6 @@ public interface UserService {
      * @throws ServiceException if cannot find user
      */
     User getUserByName(String username) throws ServiceException;
+
+    void createUser(User user) throws ServiceException;
 }

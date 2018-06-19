@@ -8,5 +8,22 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:ui="http://java.sun.com/jsf/facelets">
 
-<head><title>asdasd</title></head>
+<head><title>home</title></head>
+
+<body>
+    <h:form id="form">
+        <h:panelGrid columns="2" cellpadding="5">
+            <p:inputText id="name" value="#{userManager.user.name}"/><br/>
+
+            <p:inputText id="password" value="#{userManager.news.password}"/><br/>
+
+            <p:inputText id="role" value="#{userManager.news.role}"/><br/>
+
+            <p:inputText id="enabled" value="#{userManager.news.enabled}"/><br/>
+
+            <p:commandButton value="SAVE"
+                             action="#{userManager.saveUser(userManager.user)}"/>
+        </h:panelGrid>
+    </h:form>
+</body>
 </html>

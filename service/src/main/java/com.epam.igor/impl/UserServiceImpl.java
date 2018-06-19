@@ -27,4 +27,13 @@ public class UserServiceImpl implements UserService {
             throw new ServiceException("Cannot find user with username -" + username, e);
         }
     }
+
+    @Override
+    public void createUser(User user) throws ServiceException {
+        try {
+            userDao.create(user);
+        } catch (DaoException e) {
+            throw new ServiceException("Cannot create news", e);
+        }
+    }
 }

@@ -13,4 +13,6 @@ public interface UserDao {
      * @throws DaoException if have no any matches
      */
     User findByName(String name) throws DaoException;
+
+    User create(User user) throws DaoException;
 }

@@ -8,6 +8,7 @@ import javax.enterprise.context.Dependent;
 import javax.inject.Named;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.PersistenceException;
 import javax.persistence.Query;
 import java.io.Serializable;
 
@@ -31,4 +32,17 @@ public class UserDaoJPA implements UserDao, Serializable {
         }
         return user;
     }
+
+    @Override
+    public User create(User user) throws DaoException {
+        try {
+            entityManager.persist(user);
+        } catch (PersistenceException e) {
+            throw new DaoException("Not enough information for persist news", e);
+        }
+        entityManager.flush();
+        return user;
+    }
+
+
 }
