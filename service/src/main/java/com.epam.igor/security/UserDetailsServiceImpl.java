@@ -28,9 +28,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Resource(lookup = "java:app/cinema/UserServiceImpl")
     private UserService userService;
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         com.epam.igor.entity.User user;

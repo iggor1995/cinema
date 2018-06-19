@@ -9,7 +9,7 @@ import com.epam.igor.exception.ServiceException;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 
-@Stateless
+@Stateless()
 public class UserServiceImpl implements UserService {
 
     private UserDao userDao;

@@ -20,9 +20,6 @@ public class UserDaoJPA implements UserDao, Serializable {
     @PersistenceContext
     private EntityManager entityManager;
 
-    /**
-     * {@inheritDoc}
-     **/
     @Override
     public User findByName(String name) throws DaoException {
         User user;
