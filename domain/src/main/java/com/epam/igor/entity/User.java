@@ -5,10 +5,12 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
-
+@Entity
+@Table(name = "users")
 public class User extends BaseEntity implements Serializable {
 
     private static final long serialVersionUID = -2692253546761426748L;
+
     @Column(name = "name")
     private String name;
 
@@ -45,14 +47,18 @@ public class User extends BaseEntity implements Serializable {
     }
 
     public void setEnabled(boolean enabled) {
-        this.enabled = enabled;
+        this.enabled = true;
     }
 
     public Set<UserRole> getUserRole() {
         return userRole;
     }
 
-    public void setUserRole(Set<UserRole> userRole) {
-        this.userRole = userRole;
+    public void setUserRole(String userRole) {
+        Set<UserRole> userRoles = new HashSet<>();
+        UserRole role = new UserRole();
+        role.setRole("USER");
+        userRoles.add(role);
+        this.userRole = userRoles;
     }
 }

@@ -1,3 +1,10 @@
-com\epam\igor\entity\BaseEntity.class
+com\epam\igor\converter\DateTimeConverter.class
+com\epam\igor\converter\RateConverter.class
+com\epam\igor\entity\Event.class
 com\epam\igor\entity\User.class
 com\epam\igor\entity\UserRole.class
+com\epam\igor\entity\Rate.class
+com\epam\igor\converter\DateConverter.class
+com\epam\igor\entity\Auditorium.class
+com\epam\igor\entity\BaseEntity.class
+com\epam\igor\util\CsvUtil.class

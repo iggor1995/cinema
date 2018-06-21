@@ -1,5 +1,6 @@
 package com.epam.igor.impl;
 
+
 import com.epam.igor.api.UserService;
 import com.epam.igor.dao.api.UserDao;
 import com.epam.igor.dao.exception.DaoException;
@@ -33,7 +34,7 @@ public class UserServiceImpl implements UserService {
         try {
             userDao.create(user);
         } catch (DaoException e) {
-            throw new ServiceException("Cannot create news", e);
+            throw new ServiceException("Cannot create user", e);
         }
     }
 }

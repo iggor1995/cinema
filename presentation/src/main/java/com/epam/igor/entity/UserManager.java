@@ -5,6 +5,7 @@ import com.epam.igor.exception.ServiceException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Produces;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
@@ -20,7 +21,6 @@ public class UserManager {
 
     @Inject
     private UserService userService;
-
     private User user;
 
     @Produces
@@ -29,11 +29,17 @@ public class UserManager {
         return user;
     }
 
+    @PostConstruct
+    public void init() {
+            this.user = new User();
+    }
+
     public String saveUser(User user) {
+
         try {
             userService.createUser(user);
         } catch (ServiceException e) {
-            LOGGER.error("Cannot create new user", e);
+            LOGGER.error("Cannot save user");
         }
         return HOME;
     }

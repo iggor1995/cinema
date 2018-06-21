@@ -1,3 +1,7 @@
-com\epam\igor\dao\impl\UserDaoJPA.class
-com\epam\igor\dao\api\UserDao.class
 com\epam\igor\dao\exception\DaoException.class
+com\epam\igor\dao\impl\AuditoriumDaoJPA.class
+com\epam\igor\dao\impl\UserDaoJPA.class
+com\epam\igor\dao\api\AuditoriumDao.class
+com\epam\igor\dao\api\EventDao.class
+com\epam\igor\dao\impl\EventDaoJPA.class
+com\epam\igor\dao\api\UserDao.class

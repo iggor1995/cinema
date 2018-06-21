@@ -38,11 +38,9 @@ public class UserDaoJPA implements UserDao, Serializable {
         try {
             entityManager.persist(user);
         } catch (PersistenceException e) {
-            throw new DaoException("Not enough information for persist news", e);
+            throw new DaoException("Not enough information for persist user", e);
         }
         entityManager.flush();
         return user;
     }
-
-
 }
