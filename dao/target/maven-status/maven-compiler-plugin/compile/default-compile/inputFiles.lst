@@ -2,6 +2,8 @@ D:\Idea_Workspace\cinema\dao\src\main\java\com\epam\igor\dao\impl\AuditoriumDaoJ
 D:\Idea_Workspace\cinema\dao\src\main\java\com\epam\igor\dao\impl\EventDaoJPA.java
 D:\Idea_Workspace\cinema\dao\src\main\java\com\epam\igor\dao\api\UserDao.java
 D:\Idea_Workspace\cinema\dao\src\main\java\com\epam\igor\dao\api\AuditoriumDao.java
+D:\Idea_Workspace\cinema\dao\src\main\java\com\epam\igor\dao\impl\TicketDaoJPA.java
 D:\Idea_Workspace\cinema\dao\src\main\java\com\epam\igor\dao\api\EventDao.java
 D:\Idea_Workspace\cinema\dao\src\main\java\com\epam\igor\dao\impl\UserDaoJPA.java
+D:\Idea_Workspace\cinema\dao\src\main\java\com\epam\igor\dao\api\TicketDao.java
 D:\Idea_Workspace\cinema\dao\src\main\java\com\epam\igor\dao\exception\DaoException.java

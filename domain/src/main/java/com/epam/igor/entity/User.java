@@ -4,6 +4,7 @@ package com.epam.igor.entity;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 @Entity
 @Table(name = "users")
@@ -54,11 +55,24 @@ public class User extends BaseEntity implements Serializable {
         return userRole;
     }
 
-    public void setUserRole(String userRole) {
-        Set<UserRole> userRoles = new HashSet<>();
-        UserRole role = new UserRole();
-        role.setRole("USER");
-        userRoles.add(role);
-        this.userRole = userRoles;
+    public void setUserRole(Set<UserRole> userRole) {
+        this.userRole = userRole;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return enabled == user.enabled &&
+                Objects.equals(name, user.name) &&
+                Objects.equals(password, user.password) &&
+                Objects.equals(userRole, user.userRole);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(name, password, enabled, userRole);
     }
 }

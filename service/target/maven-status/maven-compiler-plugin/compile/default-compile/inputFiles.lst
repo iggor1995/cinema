@@ -6,5 +6,7 @@ D:\Idea_Workspace\cinema\service\src\main\java\com.epam.igor\security\UserDetail
 D:\Idea_Workspace\cinema\service\src\main\java\com.epam.igor\api\EventService.java
 D:\Idea_Workspace\cinema\service\src\main\java\com.epam.igor\config\SecurityWebApplicationInitializer.java
 D:\Idea_Workspace\cinema\service\src\main\java\com.epam.igor\impl\UserServiceImpl.java
+D:\Idea_Workspace\cinema\service\src\main\java\com.epam.igor\api\TicketService.java
 D:\Idea_Workspace\cinema\service\src\main\java\com.epam.igor\impl\AuditoriumServiceImpl.java
 D:\Idea_Workspace\cinema\service\src\main\java\com.epam.igor\impl\EventServiceImpl.java
+D:\Idea_Workspace\cinema\service\src\main\java\com.epam.igor\impl\TicketServiceImpl.java

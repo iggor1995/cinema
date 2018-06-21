@@ -5,6 +5,7 @@ import com.epam.igor.converter.DateTimeConverter;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 @Entity
 @Table(name = "events")
@@ -21,9 +22,19 @@ public class Event extends BaseEntity implements Serializable {
     @Column(name = "date_time")
     @Convert(converter = DateTimeConverter.class)
     private LocalDateTime dateTime;
-    @ManyToOne
+    @Column(name = "auditorium_id")
+    private Long auditoriumId;
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "auditorium_id", insertable = false, updatable = false, nullable = false)
     private Auditorium auditorium;
+
+    public Long getAuditoriumId() {
+        return auditoriumId;
+    }
+
+    public void setAuditoriumId(Long auditoriumId) {
+        this.auditoriumId = auditoriumId;
+    }
 
     public String getName() {
         return name;
@@ -63,5 +74,24 @@ public class Event extends BaseEntity implements Serializable {
 
     public void setAuditorium(Auditorium auditorium) {
         this.auditorium = auditorium;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Event event = (Event) o;
+        return Double.compare(event.basePrice, basePrice) == 0 &&
+                Objects.equals(name, event.name) &&
+                rate == event.rate &&
+                Objects.equals(dateTime, event.dateTime) &&
+                Objects.equals(auditoriumId, event.auditoriumId) &&
+                Objects.equals(auditorium, event.auditorium);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(name, rate, basePrice, dateTime, auditoriumId, auditorium);
     }
 }

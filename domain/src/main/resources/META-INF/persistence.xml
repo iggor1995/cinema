@@ -9,6 +9,8 @@
         <class>com.epam.igor.entity.User</class>
         <class>com.epam.igor.entity.UserRole</class>
         <class>com.epam.igor.entity.Auditorium</class>
+        <class>com.epam.igor.entity.Event</class>
+        <class>com.epam.igor.entity.Ticket</class>
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>

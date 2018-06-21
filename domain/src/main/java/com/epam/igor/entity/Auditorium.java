@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
 @Table(name = "auditoriums")
@@ -56,4 +57,19 @@ public class Auditorium extends BaseEntity implements Serializable {
         this.vipSeats = vipSeats;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Auditorium that = (Auditorium) o;
+        return seatsNumber == that.seatsNumber &&
+                Objects.equals(name, that.name) &&
+                Objects.equals(vipSeats, that.vipSeats);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(name, seatsNumber, vipSeats);
+    }
 }
