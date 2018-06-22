@@ -6,67 +6,72 @@
       xmlns:p="http://primefaces.org/ui"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:ui="http://java.sun.com/jsf/facelets">
-
+<f:view locale="#{language.locale}"/>
 <h:head><title>home</title></h:head>
 
-<body>
-    <h:form id="userForm">
-        <h:panelGrid columns="2" cellpadding="5">
-            <label>name</label>
-            <p:inputText id="userName" value="#{userManager.user.name}"/><br/>
-            <label>password</label>
-            <p:inputText id="password" value="#{userManager.user.password}"/><br/>
-            <p:commandButton value="SAVE"
-                             action="#{userManager.saveUser(userManager.user)}"/>
-        </h:panelGrid>
-    </h:form>
+<h:body>
+    <ui:composition template="/template/commonLayout.xhtml">
+        <ui:define name="content">
+            <h:form id="userForm">
+                <h:panelGrid columns="2" cellpadding="5">
+                    <label>name</label>
+                    <p:inputText id="userName" value="#{userManager.user.name}"/><br/>
+                    <label>password</label>
+                    <p:inputText id="password" value="#{userManager.user.password}"/><br/>
+                    <p:commandButton value="SAVE"
+                                     action="#{userManager.saveUser(userManager.user)}"/>
+                </h:panelGrid>
+            </h:form>
 
-    <h:form id="auditoriumForm">
-        <h:panelGrid columns="2" cellpadding="5">
-            <label>name</label>
-            <p:inputText id="auditoriumName" value="#{auditoriumManager.auditorium.name}"/><br/>
-            <label>Seats number</label>
-            <p:inputText id="seats" value="#{auditoriumManager.auditorium.seatsNumber}"/><br/>
-            <label>Seats number</label>
-            <p:inputText id="vipSeats" value="#{auditoriumManager.auditorium.vipSeats}"/><br/>
-            <p:commandButton value="SAVE"
-                             action="#{auditoriumManager.saveAuditorium(auditoriumManager.auditorium)}"/>
-        </h:panelGrid>
-    </h:form>
+            <h:form id="auditoriumForm">
+                <h:panelGrid columns="2" cellpadding="5">
+                    <label>name</label>
+                    <p:inputText id="auditoriumName" value="#{auditoriumManager.auditorium.name}"/><br/>
+                    <label>Seats number</label>
+                    <p:inputText id="seats" value="#{auditoriumManager.auditorium.seatsNumber}"/><br/>
+                    <label>Seats number</label>
+                    <p:inputText id="vipSeats" value="#{auditoriumManager.auditorium.vipSeats}"/><br/>
+                    <p:commandButton value="SAVE"
+                                     action="#{auditoriumManager.saveAuditorium(auditoriumManager.auditorium)}"/>
+                </h:panelGrid>
+            </h:form>
 
-    <h:form id="eventForm">
-        <h:panelGrid columns="2" cellpadding="5">
-            <label>name</label>
-            <p:inputText id="eventName" value="#{eventManager.event.name}"/><br/>
-            <label>rate</label>
-            <p:inputText id="rate" value="#{eventManager.event.rate}"/><br/>
-            <label>Base price</label>
-            <p:inputText id="basePrice" value="#{eventManager.event.basePrice}"/><br/>
-            <label>Date and time</label>
-            <p:calendar id="datetime" value="#{eventManager.event.dateTime}" pattern="MM/dd/yyyy HH:mm:ss" >
-                <f:converter converterId="localDateTimeFacesConverter"/>
-            </p:calendar>
-            <label>Auditorium</label>
-            <p:inputText id="auditorium" value="#{eventManager.event.auditoriumId}"/><br/>
-            <p:commandButton value="SAVE"
-                             action="#{eventManager.saveEvent(eventManager.event)}"/>
-        </h:panelGrid>
-    </h:form>
+            <h:form id="eventForm">
+                <h:panelGrid columns="2" cellpadding="5">
+                    <label>name</label>
+                    <p:inputText id="eventName" value="#{eventManager.event.name}"/><br/>
+                    <label>rate</label>
+                    <p:inputText id="rate" value="#{eventManager.event.rate}"/><br/>
+                    <label>Base price</label>
+                    <p:inputText id="basePrice" value="#{eventManager.event.basePrice}"/><br/>
+                    <label>Date and time</label>
+                    <p:calendar id="datetime" value="#{eventManager.event.dateTime}" pattern="MM/dd/yyyy HH:mm:ss" >
+                        <f:converter converterId="localDateTimeFacesConverter"/>
+                    </p:calendar>
+                    <label>Auditorium</label>
+                    <p:inputText id="auditorium" value="#{eventManager.event.auditoriumId}"/><br/>
+                    <p:commandButton value="SAVE"
+                                     action="#{eventManager.saveEvent(eventManager.event)}"/>
+                </h:panelGrid>
+            </h:form>
 
-    <h:form id="ticketForm">
-        <h:panelGrid columns="2" cellpadding="5">
-            <label>Seat</label>
-            <p:inputText id="seat" value="#{ticketManager.ticket.seat}"/><br/>
-            <label>price</label>
-            <p:inputText id="rate" value="#{ticketManager.ticket.price}"/><br/>
-            <label>Event</label>
-            <p:inputText id="basePrice" value="#{ticketManager.ticket.eventId}"/><br/>
-            <label>User</label>
-            <p:inputText id="auditorium" value="#{ticketManager.ticket.userId}"/><br/>
-            <p:commandButton value="SAVE"
-                             action="#{ticketManager.saveTicket(ticketManager.ticket)}"/>
-        </h:panelGrid>
-    </h:form>
+            <h:form id="ticketForm">
+                <h:panelGrid columns="2" cellpadding="5">
+                    <label>Seat</label>
+                    <p:inputText id="seat" value="#{ticketManager.ticket.seat}"/><br/>
+                    <label>price</label>
+                    <p:inputText id="rate" value="#{ticketManager.ticket.price}"/><br/>
+                    <label>Event</label>
+                    <p:inputText id="basePrice" value="#{ticketManager.ticket.eventId}"/><br/>
+                    <label>User</label>
+                    <p:inputText id="auditorium" value="#{ticketManager.ticket.userId}"/><br/>
+                    <p:commandButton value="SAVE"
+                                     action="#{ticketManager.saveTicket(ticketManager.ticket)}"/>
+                </h:panelGrid>
+            </h:form>
 
-</body>
+            <p:commandButton value="Register" action="/pages/register.xhtml"/>
+        </ui:define>
+    </ui:composition>
+</h:body>
 </html>

@@ -34,6 +34,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         List<GrantedAuthority> authorities;
         try {
             user = userService.getUserByName(username);
+            System.out.println(user.getUserRole() + " " + user.getName());
             authorities = buildUserAuthority(user.getUserRole());
         } catch (ServiceException e) {
             throw new UsernameNotFoundException("Have no user with username -" + username, e);

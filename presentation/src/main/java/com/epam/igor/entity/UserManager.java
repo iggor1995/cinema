@@ -35,13 +35,19 @@ public class UserManager {
     }
 
     public String saveUser(User user) {
-
         try {
-            userService.createUser(user);
+            userService.createUser(getUserWithDefaultValues(user));
         } catch (ServiceException e) {
             LOGGER.error("Cannot save user");
         }
         return HOME;
     }
 
+    private User getUserWithDefaultValues(User user){
+        UserRole defaultUserRole = new UserRole();
+        defaultUserRole.setRole("USER");
+        user.getUserRole().add(defaultUserRole);
+        user.setEnabled(true);
+        return user;
+    }
 }
