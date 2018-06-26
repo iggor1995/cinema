@@ -21,6 +21,11 @@ public class User extends BaseEntity implements Serializable {
     @Column(name = "enabled")
     private boolean enabled;
 
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinTable(name = "user_accounts",
+            joinColumns = @JoinColumn(name = "user_id"))
+    private UserAccount userAccount = new UserAccount();
+
     @ManyToMany(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
     @JoinTable(name = "user_roles",
             joinColumns = @JoinColumn(name = "user_id"),
@@ -57,6 +62,14 @@ public class User extends BaseEntity implements Serializable {
 
     public void setUserRole(Set<UserRole> userRole) {
         this.userRole = userRole;
+    }
+
+    public UserAccount getUserAccount() {
+        return userAccount;
+    }
+
+    public void setUserAccount(UserAccount userAccount) {
+        this.userAccount = userAccount;
     }
 
     @Override

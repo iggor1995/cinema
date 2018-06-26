@@ -10,3 +10,4 @@ com\epam\igor\converter\RateConverter.class
 com\epam\igor\entity\UserRole.class
 com\epam\igor\converter\DateConverter.class
 com\epam\igor\entity\Ticket.class
+com\epam\igor\entity\UserAccount.class

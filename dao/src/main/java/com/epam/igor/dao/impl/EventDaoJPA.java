@@ -31,6 +31,16 @@ public class EventDaoJPA implements EventDao, Serializable {
     }
 
     @Override
+    public Event edit(Event event) throws DaoException {
+        try{
+            entityManager.merge(event);
+        } catch (PersistenceException e){
+            throw new DaoException("Cannot save new event", e);
+        }
+        return event;
+    }
+
+    @Override
     public List<Event> getAll() throws DaoException {
         Query query = entityManager.createQuery("From Event", Event.class);
         return query.getResultList();

@@ -30,6 +30,15 @@ public class EventServiceImpl implements EventService {
     }
 
     @Override
+    public void editEvent(Event event) throws ServiceException {
+        try {
+            eventDao.edit(event);
+        } catch (DaoException e){
+            throw new ServiceException("Cannot edit event", e);
+        }
+    }
+
+    @Override
     public List<Event> getAll() throws ServiceException {
         try {
             return eventDao.getAll();

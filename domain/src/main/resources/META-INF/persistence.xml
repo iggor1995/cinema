@@ -11,6 +11,7 @@
         <class>com.epam.igor.entity.Auditorium</class>
         <class>com.epam.igor.entity.Event</class>
         <class>com.epam.igor.entity.Ticket</class>
+        <class>com.epam.igor.entity.UserAccount</class>
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>

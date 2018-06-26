@@ -14,28 +14,23 @@
     <ui:composition template="/template/commonLayout.xhtml">
 
         <ui:define name="content">
-            <p:dataTable value="#{listManager.events}" var="value">
-                <p:column>
-                    <f:facet name="header">Name</f:facet>
-                    <h:outputText value="#{value.name}"/><br/>
-                </p:column>
-                <p:column>
-                    <f:facet name="header">Rate</f:facet>
-                    <h:outputText value="#{value.rate}"/><br/>
-                </p:column>
-                <p:column>
-                    <f:facet name="header">Base price</f:facet>
-                    <h:outputText value="#{value.basePrice}"/><br/>
-                </p:column>
-                <p:column>
-                    <f:facet name="header">Date and time</f:facet>
-                    <h:outputText value="#{value.dateTime}"/><br/>
-                </p:column>
-                <p:column>
-                    <f:facet name="header">Auditorium</f:facet>
-                    <h:outputText value="#{value.auditorium.name}"/><br/>
-                </p:column>
-            </p:dataTable>
+            <h:panelGroup layout="block">
+                <h:panelGrid id = "panel" columns = "1" border = "1"
+                             cellpadding = "10" cellspacing = "1">
+
+                    <f:facet name = "header">
+                        <h:outputText value = "ADMIN BOARD"/>
+                    </f:facet>
+                    <p:commandButton rendered="#{request.isUserInRole('ROLE_ADMIN')}" value="Manage events" action="/pages/admin/events-manage.xhtml"/>
+                    <p:commandButton rendered="#{request.isUserInRole('ROLE_ADMIN')}" value="Manage tickets" action="/tickets-manage.xhtml"/>
+                    <p:commandButton rendered="#{request.isUserInRole('ROLE_ADMIN')}" value="Manage users" action="/users-manage.xhtml"/>
+                    <f:facet name = "footer">
+                        <h:panelGroup style = "display:block; text-align:center">
+                            <h:commandButton id = "submit" value = "Submit" />
+                        </h:panelGroup>
+                    </f:facet>
+                </h:panelGrid>
+            </h:panelGroup>
         </ui:define>
     </ui:composition>
 </h:body>

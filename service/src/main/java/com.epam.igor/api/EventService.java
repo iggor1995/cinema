@@ -10,4 +10,6 @@ public interface EventService {
     void createEvent(Event event) throws ServiceException;
 
     List<Event> getAll() throws ServiceException;
+
+    void editEvent(Event event) throws ServiceException;
 }

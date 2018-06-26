@@ -46,9 +46,12 @@ public class UserManager {
     }
 
     private User getUserWithDefaultValues(User user){
+        user.getUserAccount().setCash(5000);
+
         UserRole defaultUserRole = new UserRole();
         defaultUserRole.setId(2L);
         defaultUserRole.setRole("ROLE_USER");
+
         Set<UserRole> roles = new HashSet<>();
         roles.add(defaultUserRole);
         user.setUserRole(roles);

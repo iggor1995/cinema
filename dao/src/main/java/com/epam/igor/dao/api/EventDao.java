@@ -10,4 +10,6 @@ public interface EventDao {
     Event create(Event event) throws DaoException;
 
     List<Event> getAll() throws DaoException;
+
+    Event edit(Event event) throws DaoException;
 }
