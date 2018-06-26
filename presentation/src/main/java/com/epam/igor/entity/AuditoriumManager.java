@@ -17,7 +17,7 @@ import javax.inject.Named;
 @RequestScoped
 public class AuditoriumManager {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(UserManager.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(AuditoriumManager.class);
     private static final String HOME = "/pages/home?faces-redirect=true";
 
     @Inject

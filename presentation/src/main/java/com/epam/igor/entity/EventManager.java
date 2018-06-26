@@ -11,12 +11,13 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
+import java.util.List;
 
 @ManagedBean
 @RequestScoped
 public class EventManager {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(UserManager.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(EventManager.class);
     private static final String HOME = "/pages/home?faces-redirect=true";
 
     @Inject
@@ -31,6 +32,7 @@ public class EventManager {
 
     @PostConstruct
     public void init() {
+
         this.event = new Event();
     }
 
@@ -41,5 +43,9 @@ public class EventManager {
             LOGGER.error("Cannot save user");
         }
         return HOME;
+    }
+
+    public void setEvent(Event event) {
+        this.event = event;
     }
 }

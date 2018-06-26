@@ -8,7 +8,9 @@ import javax.enterprise.context.Dependent;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.PersistenceException;
+import javax.persistence.Query;
 import java.io.Serializable;
+import java.util.List;
 
 @Dependent
 public class EventDaoJPA implements EventDao, Serializable {
@@ -27,4 +29,11 @@ public class EventDaoJPA implements EventDao, Serializable {
         }
         return event;
     }
+
+    @Override
+    public List<Event> getAll() throws DaoException {
+        Query query = entityManager.createQuery("From Event", Event.class);
+        return query.getResultList();
+    }
+
 }

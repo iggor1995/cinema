@@ -8,11 +8,12 @@ import com.epam.igor.exception.ServiceException;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
+import java.util.List;
 
 @Stateless
 public class EventServiceImpl implements EventService {
 
-    EventDao eventDao;
+    private EventDao eventDao;
 
     @Inject
     public void setEventDao(EventDao eventDao){
@@ -25,6 +26,15 @@ public class EventServiceImpl implements EventService {
             eventDao.create(event);
         } catch (DaoException e){
             throw new ServiceException("Cannot save event", e);
+        }
+    }
+
+    @Override
+    public List<Event> getAll() throws ServiceException {
+        try {
+            return eventDao.getAll();
+        } catch (DaoException e) {
+            throw new ServiceException("Couldn't load event list", e);
         }
     }
 }

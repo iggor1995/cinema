@@ -16,7 +16,7 @@ import javax.inject.Named;
 @ManagedBean
 @RequestScoped
 public class TicketManager {
-    private static final Logger LOGGER = LoggerFactory.getLogger(UserManager.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(TicketManager.class);
     private static final String HOME = "/pages/home?faces-redirect=true";
 
     @Inject

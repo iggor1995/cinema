@@ -11,6 +11,8 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
+import java.util.HashSet;
+import java.util.Set;
 
 @ManagedBean
 @RequestScoped
@@ -45,8 +47,11 @@ public class UserManager {
 
     private User getUserWithDefaultValues(User user){
         UserRole defaultUserRole = new UserRole();
+        defaultUserRole.setId(2L);
         defaultUserRole.setRole("USER");
-        user.getUserRole().add(defaultUserRole);
+        Set<UserRole> roles = new HashSet<>();
+        roles.add(defaultUserRole);
+        user.setUserRole(roles);
         user.setEnabled(true);
         return user;
     }
