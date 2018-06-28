@@ -35,6 +35,10 @@
                     <f:facet name="header">Auditorium</f:facet>
                     <h:outputText value="#{value.auditorium.name}"/><br/>
                 </p:column>
+                <p:column>
+                    <p:commandButton value="More"
+                                     action="#{eventManager.showEvent(value)}"/>
+                </p:column>
             </p:dataTable>
         </ui:define>
     </ui:composition>

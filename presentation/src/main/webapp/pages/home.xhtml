@@ -55,22 +55,6 @@
                 </h:panelGrid>
             </h:form>
 
-            <h:form id="ticketForm">
-                <h:panelGrid columns="2" cellpadding="5">
-                    <label>Seat</label>
-                    <p:inputText id="seat" value="#{ticketManager.ticket.seat}"/><br/>
-                    <label>price</label>
-                    <p:inputText id="rate" value="#{ticketManager.ticket.price}"/><br/>
-                    <label>Event</label>
-                    <p:inputText id="basePrice" value="#{ticketManager.ticket.eventId}"/><br/>
-                    <label>User</label>
-                    <p:inputText id="auditorium" value="#{ticketManager.ticket.userId}"/><br/>
-                    <p:commandButton value="SAVE"
-                                     action="#{ticketManager.saveTicket(ticketManager.ticket)}"/>
-                </h:panelGrid>
-            </h:form>
-
-            <p:commandButton value="Register" action="/pages/register.xhtml"/>
         </ui:define>
     </ui:composition>
 </h:body>

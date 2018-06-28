@@ -19,6 +19,8 @@ public class EventManager {
     private static final Logger LOGGER = LoggerFactory.getLogger(EventManager.class);
     private static final String HOME = "/pages/home?faces-redirect=true";
     private static final String EDIT_EVENT = "/pages/admin/event/event-edit?faces-redirect=true";
+    private static final String SHOW_EVENT = "/pages/event-page?faces-redirect=true";
+    private static final String BOOK_EVENT_PAGE = "/pages/user/book-ticket?faces-redirect=true";
 
     @Inject
     private EventService eventService;
@@ -71,7 +73,17 @@ public class EventManager {
         return EDIT_EVENT;
     }
 
+    public String showEvent(Event event){
+        this.event = event;
+        return SHOW_EVENT;
+    }
+
     public void setEvent(Event event) {
         this.event = event;
+    }
+
+    public String showBookTicketPage(Event event){
+        this.event = event;
+        return BOOK_EVENT_PAGE;
     }
 }

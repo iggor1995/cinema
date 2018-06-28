@@ -12,6 +12,8 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
+import java.util.Arrays;
+import java.util.List;
 
 @ManagedBean
 @RequestScoped
@@ -22,6 +24,18 @@ public class TicketManager {
     @Inject
     private TicketService ticketService;
     private Ticket ticket;
+    private String[] favFood3;
+
+    public String[] getFavFood3() {
+        return favFood3;
+    }
+
+    public void setFavFood3(String[] favFood3) {
+        this.favFood3 = favFood3;
+        for(String s : favFood3){
+            System.out.println(s);
+        }
+    }
 
     @Produces
     @Named
@@ -42,4 +56,14 @@ public class TicketManager {
         }
         return HOME;
     }
+
+    public List<String> getAvailableSeats(Event event){
+        try {
+            return ticketService.getAvailableSeats(event);
+        } catch (ServiceException e) {
+            LOGGER.error("Couldn't count available seats");
+        }
+        return null;
+    }
+
 }
