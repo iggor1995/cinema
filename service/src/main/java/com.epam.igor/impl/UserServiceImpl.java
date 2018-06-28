@@ -5,6 +5,7 @@ import com.epam.igor.api.UserService;
 import com.epam.igor.dao.api.UserDao;
 import com.epam.igor.dao.exception.DaoException;
 import com.epam.igor.entity.User;
+import com.epam.igor.entity.UserAccount;
 import com.epam.igor.exception.ServiceException;
 
 import javax.ejb.Stateless;
@@ -32,7 +33,9 @@ public class UserServiceImpl implements UserService {
     @Override
     public void createUser(User user) throws ServiceException {
         try {
-            userDao.create(user);
+            UserAccount userAccount = new UserAccount();
+            userAccount.setCash(5000);
+            userDao.create(user, userAccount);
         } catch (DaoException e) {
             throw new ServiceException("Cannot create user", e);
         }

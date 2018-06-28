@@ -3,6 +3,7 @@ package com.epam.igor.dao.impl;
 import com.epam.igor.dao.api.UserDao;
 import com.epam.igor.dao.exception.DaoException;
 import com.epam.igor.entity.User;
+import com.epam.igor.entity.UserAccount;
 
 import javax.enterprise.context.Dependent;
 import javax.inject.Named;
@@ -34,13 +35,17 @@ public class UserDaoJPA implements UserDao, Serializable {
     }
 
     @Override
-    public User create(User user) throws DaoException {
+    public User create(User user, UserAccount userAccount) throws DaoException {
         try {
             entityManager.persist(user);
+            entityManager.flush();
+            userAccount.setUserId(user.getId());
+            System.out.println(user.getId() + "iduid");
+            entityManager.persist(userAccount);
+            entityManager.flush();
         } catch (PersistenceException e) {
             throw new DaoException("Not enough information for persist user", e);
         }
-        entityManager.flush();
         return user;
     }
 }

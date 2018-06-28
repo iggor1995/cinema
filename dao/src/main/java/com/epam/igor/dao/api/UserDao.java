@@ -2,6 +2,7 @@ package com.epam.igor.dao.api;
 
 import com.epam.igor.dao.exception.DaoException;
 import com.epam.igor.entity.User;
+import com.epam.igor.entity.UserAccount;
 
 public interface UserDao {
 
@@ -14,5 +15,5 @@ public interface UserDao {
      */
     User findByName(String name) throws DaoException;
 
-    User create(User user) throws DaoException;
+    User create(User user, UserAccount userAccount) throws DaoException;
 }
