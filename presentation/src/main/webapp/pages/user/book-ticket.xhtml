@@ -13,35 +13,32 @@
 <h:body>
     <ui:composition template="/template/commonLayout.xhtml">
         <ui:define name="content">
-            <p:column>
-                <h:outputLabel for="eventName" value="#{message['event.name']}"/><br/>
+            <h:panelGrid columns="2" cellpadding="5">
+                <label>#{message['event.name']}</label>
                 <h:outputText value="#{eventManager.event.name}" id="eventName"/><br/>
-            </p:column>
-            <p:column>
-                <h:outputLabel for="eventRate" value="#{message['event.rate']}"/><br/>
-                <h:outputText value="#{eventManager.event.rate}" id="eventRate"/><br/>
-            </p:column>
-            <p:column>
-                <h:outputLabel for="eventPrice" value="#{message['event.basePrice']}"/><br/>
-                <h:outputText value="#{eventManager.event.basePrice}" id="eventPrice"/><br/>
-            </p:column>
-            <p:column>
-                <h:outputLabel for="eventDate" value="#{message['event.dateTime']}"/><br/>
-                <h:outputText value="#{eventManager.event.dateTime}" id="eventDate"/><br/>
-            </p:column>
-            <p:column>
-                <h:outputLabel for="eventAuditorium" value="#{message['event.auditorium']}"/><br/>
-                <h:outputText value="#{eventManager.event.auditorium.name}" id="eventAuditorium"/><br/>
-            </p:column>
 
+                <label>#{message['event.rate']}</label>
+                <h:outputText value="#{eventManager.event.rate}" id="eventRate"/><br/>
+
+                <label>#{message['event.basePrice']}</label>
+                <h:outputText value="#{eventManager.event.basePrice}" id="eventPrice"/><br/>
+
+                <label>#{message['event.dateTime']}</label>
+                <h:outputText value="#{eventManager.event.dateTime}" id="eventDate"/><br/>
+
+                <label>#{message['event.auditorium']}</label>
+                <h:outputText value="#{eventManager.event.auditorium.name}" id="eventAuditorium"/><br/>
+            </h:panelGrid>
+
+            <label>seats</label>
             <h:form>
-                <h:selectManyCheckbox id="asd"  value="#{ticketManager.favFood3}">
-                    <ui:repeat value="#{ticketManager.getAvailableSeats(eventManager.event)}" var = "value">
-                        <f:selectItem itemValue="value" itemLabel="value" />
-                    </ui:repeat>
-                </h:selectManyCheckbox>
-                <h:commandButton value="Submit" action="#{eventManager.showBookTicketPage(eventManager.event)}" />
+                <h:selectOneMenu value="#{ticketManager.seat}">
+                    <f:selectItems value="#{ticketManager.getAvailableSeats(eventManager.event)}" var="s"
+                                                            itemLabel="#{s}" itemValue="#{s}"/>
+                </h:selectOneMenu>
+                <h:commandButton value="Buy" action="#{ticketManager.buyTicket(eventManager.event, request.userPrincipal.name)}" />
             </h:form>
+
         </ui:define>
     </ui:composition>
 </h:body>

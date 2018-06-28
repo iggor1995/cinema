@@ -39,7 +39,7 @@
                     </h:selectOneMenu>
                     <p:commandButton rendered="#{request.userPrincipal eq null}" value="Login" action="/login.xhtml"/>
                 </f:facet>
-                <p:menuitem style="margin-left: 400px" rendered="#{not (request.userPrincipal eq null)}" value="Logout" url="/logout"/>
+                <p:menuitem style="margin-left: 400px" rendered="#{not (request.userPrincipal == '')}" value="Logout" url="/logout"/>
                 <p:menuitem style="margin-left: 500px" rendered="#{request.isUserInRole('ROLE_ADMIN')}" value="Admin cabinet"
                             action="/pages/admin/admin-cabinet?faces-redirect=true"/>
             </p:menubar>

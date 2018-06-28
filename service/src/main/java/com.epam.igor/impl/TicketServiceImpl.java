@@ -56,7 +56,7 @@ public class TicketServiceImpl implements TicketService {
     private List<String> excludeUserSeats(List<String> availableSeats, List<Ticket> tickets, long eventId){
         for (Ticket ticket : tickets) {
             if (ticket.getEventId().equals(eventId)) {
-                String[] usedSeats = ticket.getSeats().split(",");
+                String[] usedSeats = ticket.getSeat().split(",");
                 availableSeats.removeAll(Arrays.asList(usedSeats));
             }
         }

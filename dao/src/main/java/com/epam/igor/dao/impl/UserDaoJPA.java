@@ -48,4 +48,21 @@ public class UserDaoJPA implements UserDao, Serializable {
         }
         return user;
     }
+
+    @Override
+    public UserAccount getUserAccountByUserId(long userId) throws DaoException {
+        UserAccount userAccount;
+        Query query = entityManager.createQuery("SELECT userAccount from UserAccount userAccount where userAccount.userId LIKE :value");
+        query.setParameter("value", userId);
+        userAccount = (UserAccount) query.getSingleResult();
+        if (userAccount == null) {
+            throw new DaoException("Have no such account");
+        }
+        return userAccount;
+    }
+
+    @Override
+    public void updateAccount(UserAccount userAccount) throws DaoException {
+        entityManager.merge(userAccount);
+    }
 }

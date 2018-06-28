@@ -16,4 +16,8 @@ public interface UserDao {
     User findByName(String name) throws DaoException;
 
     User create(User user, UserAccount userAccount) throws DaoException;
+
+    UserAccount getUserAccountByUserId(long userId) throws DaoException;
+
+    void updateAccount(UserAccount userAccount) throws DaoException;
 }

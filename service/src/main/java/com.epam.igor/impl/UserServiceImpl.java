@@ -40,4 +40,25 @@ public class UserServiceImpl implements UserService {
             throw new ServiceException("Cannot create user", e);
         }
     }
+
+    public boolean chargeUser(User user, double price) throws ServiceException {
+        try {
+            UserAccount userAccount = getUserAccount(user.getId());
+            if(userAccount != null && userAccount.getCash() > price) {
+                userAccount.setCash(userAccount.getCash() - price);
+                userDao.updateAccount(userAccount);
+            }
+        } catch (DaoException e) {
+            throw new ServiceException("Couldn't update user account: user Id -> " + user.getId());
+        }
+        return false;
+    }
+
+    public UserAccount getUserAccount(long userId) throws ServiceException {
+        try {
+           return  userDao.getUserAccountByUserId(userId);
+        } catch (DaoException e) {
+            throw new ServiceException("Couldn't get user account");
+        }
+    }
 }

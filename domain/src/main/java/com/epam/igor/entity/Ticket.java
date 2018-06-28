@@ -12,7 +12,7 @@ public class Ticket extends BaseEntity {
     private Event         event;
 
     @Column(name = "seat")
-    private String        seats;
+    private String seat;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", insertable = false, updatable = false, nullable = false)
@@ -35,12 +35,12 @@ public class Ticket extends BaseEntity {
         this.event = event;
     }
 
-    public String getSeats() {
-        return seats;
+    public String getSeat() {
+        return seat;
     }
 
-    public void setSeats(String seat) {
-        this.seats = seat;
+    public void setSeat(String seat) {
+        this.seat = seat;
     }
 
     public User getUser() {
@@ -81,13 +81,13 @@ public class Ticket extends BaseEntity {
         if (o == null || getClass() != o.getClass()) return false;
         Ticket ticket = (Ticket) o;
         return Objects.equals(event, ticket.event) &&
-                Objects.equals(seats, ticket.seats) &&
+                Objects.equals(seat, ticket.seat) &&
                 Objects.equals(user, ticket.user) &&
                 Objects.equals(price, ticket.price);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(event, seats, user, price);
+        return Objects.hash(event, seat, user, price);
     }
 }

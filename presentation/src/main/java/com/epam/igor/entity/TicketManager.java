@@ -2,6 +2,7 @@ package com.epam.igor.entity;
 
 
 import com.epam.igor.api.TicketService;
+import com.epam.igor.api.UserService;
 import com.epam.igor.exception.ServiceException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,7 +13,6 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
-import java.util.Arrays;
 import java.util.List;
 
 @ManagedBean
@@ -23,19 +23,12 @@ public class TicketManager {
 
     @Inject
     private TicketService ticketService;
+
+    @Inject
+    private UserService userService;
+
     private Ticket ticket;
-    private String[] favFood3;
-
-    public String[] getFavFood3() {
-        return favFood3;
-    }
-
-    public void setFavFood3(String[] favFood3) {
-        this.favFood3 = favFood3;
-        for(String s : favFood3){
-            System.out.println(s);
-        }
-    }
+    private String seat;
 
     @Produces
     @Named
@@ -57,6 +50,25 @@ public class TicketManager {
         return HOME;
     }
 
+    public String buyTicket(Event event, String name){
+        LOGGER.info("Buy action. Event - " + event + " userName - " + name);
+        try {
+            Ticket ticket = new Ticket();
+            ticket.setEvent(event);
+            ticket.setSeat(this.seat);
+            ticket.setEventId(event.getId());
+            User curUser = userService.getUserByName(name);
+            ticket.setUserId(curUser.getId());
+
+            if(userService.chargeUser(curUser, event.getBasePrice()))
+                ticketService.createTicket(ticket);
+            LOGGER.debug("not enough money");
+        } catch (ServiceException e) {
+            LOGGER.error("cannot save ticket");
+        }
+        return "/pages/home?faces-redirect=true";
+    }
+
     public List<String> getAvailableSeats(Event event){
         try {
             return ticketService.getAvailableSeats(event);
@@ -66,4 +78,11 @@ public class TicketManager {
         return null;
     }
 
+    public String getSeat() {
+        return seat;
+    }
+
+    public void setSeat(String seat) {
+        this.seat = seat;
+    }
 }
