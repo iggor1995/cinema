@@ -15,6 +15,10 @@
 
         <ui:define name="content">
                 <p:column>
+                    <p:graphicImage value="#{eventManager.image}">
+                    </p:graphicImage><br/>
+                </p:column>
+                <p:column>
                     <h:outputLabel for="eventName" value="#{message['event.name']}"/><br/>
                     <h:outputText value="#{eventManager.event.name}" id="eventName"/><br/>
                 </p:column>

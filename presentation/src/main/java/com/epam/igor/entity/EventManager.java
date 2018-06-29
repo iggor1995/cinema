@@ -2,6 +2,8 @@ package com.epam.igor.entity;
 
 import com.epam.igor.api.EventService;
 import com.epam.igor.exception.ServiceException;
+import org.primefaces.model.DefaultStreamedContent;
+import org.primefaces.model.StreamedContent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,8 +11,14 @@ import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Produces;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.context.FacesContext;
+import javax.faces.event.PhaseId;
 import javax.inject.Inject;
 import javax.inject.Named;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.sql.SQLException;
 
 @ManagedBean
 @SessionScoped
@@ -38,6 +46,22 @@ public class EventManager {
     @PostConstruct
     public void init() {
         this.event = new Event();
+    }
+
+    public StreamedContent getImage() throws IOException {
+        FacesContext context = FacesContext.getCurrentInstance();
+
+        if (context.getCurrentPhaseId() == PhaseId.RENDER_RESPONSE) {
+            return new DefaultStreamedContent();
+        } else {
+
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+
+            byte[] image = event.getMovie().getImage();
+
+            return new DefaultStreamedContent(new ByteArrayInputStream(image),
+                    "image/png");
+        }
     }
 
     /**

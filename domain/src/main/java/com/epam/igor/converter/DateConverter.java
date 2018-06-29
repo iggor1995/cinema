@@ -13,6 +13,8 @@ public class DateConverter implements AttributeConverter<LocalDate, Date> {
 
     @Override
     public Date convertToDatabaseColumn(LocalDate dateTime) {
+        System.out.println(dateTime);
+        System.out.println(Date.valueOf(dateTime));
         return Date.valueOf(dateTime);
     }
 

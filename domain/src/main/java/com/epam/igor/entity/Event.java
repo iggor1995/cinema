@@ -14,18 +14,38 @@ public class Event extends BaseEntity implements Serializable {
 
     @Column(name = "name")
     private String        name;
+
     @Column(name = "rate")
     private Rate          rate;
+
     @Column(name = "base_price")
     private double        basePrice;
+
     @Column(name = "date_time")
     @Convert(converter = DateTimeConverter.class)
     private LocalDateTime dateTime;
+
     @Column(name = "auditorium_id")
     private Long auditoriumId;
+
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "auditorium_id", insertable = false, updatable = false, nullable = false)
     private Auditorium auditorium;
+
+    @Column(name = "movie_id")
+    private Long movieId;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "movie_id", insertable = false, updatable = false)
+    private Movie movie;
+
+    public Movie getMovie() {
+        return movie;
+    }
+
+    public void setMovie(Movie movie) {
+        this.movie = movie;
+    }
 
     public Long getAuditoriumId() {
         return auditoriumId;
