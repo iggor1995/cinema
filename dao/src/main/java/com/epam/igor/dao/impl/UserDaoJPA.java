@@ -4,6 +4,8 @@ import com.epam.igor.dao.api.UserDao;
 import com.epam.igor.dao.exception.DaoException;
 import com.epam.igor.entity.User;
 import com.epam.igor.entity.UserAccount;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.enterprise.context.Dependent;
 import javax.inject.Named;
@@ -18,12 +20,14 @@ import java.io.Serializable;
 public class UserDaoJPA implements UserDao, Serializable {
 
     private static final long serialVersionUID = 7304243809121174813L;
+    private static final Logger LOGGER = LoggerFactory.getLogger(UserDaoJPA.class);
 
     @PersistenceContext
     private EntityManager entityManager;
 
     @Override
     public User findByName(String name) throws DaoException {
+        LOGGER.info("Find by user name - " + name);
         User user;
         Query query = entityManager.createQuery("SELECT user from User user where user.name LIKE :value");
         query.setParameter("value", name);
@@ -39,10 +43,11 @@ public class UserDaoJPA implements UserDao, Serializable {
         try {
             entityManager.persist(user);
             entityManager.flush();
+            LOGGER.debug("Persist user - " + user);
             userAccount.setUserId(user.getId());
-            System.out.println(user.getId() + "iduid");
             entityManager.persist(userAccount);
             entityManager.flush();
+            LOGGER.debug("Persist user account");
         } catch (PersistenceException e) {
             throw new DaoException("Not enough information for persist user", e);
         }
@@ -52,6 +57,7 @@ public class UserDaoJPA implements UserDao, Serializable {
     @Override
     public UserAccount getUserAccountByUserId(long userId) throws DaoException {
         UserAccount userAccount;
+        LOGGER.debug("Retrieving user account");
         Query query = entityManager.createQuery("SELECT userAccount from UserAccount userAccount where userAccount.userId LIKE :value");
         query.setParameter("value", userId);
         userAccount = (UserAccount) query.getSingleResult();
@@ -63,6 +69,7 @@ public class UserDaoJPA implements UserDao, Serializable {
 
     @Override
     public void updateAccount(UserAccount userAccount) throws DaoException {
+        LOGGER.debug("Update user account");
         entityManager.merge(userAccount);
     }
 }

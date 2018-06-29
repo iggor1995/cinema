@@ -3,6 +3,9 @@ package com.epam.igor.security;
 import com.epam.igor.api.UserService;
 import com.epam.igor.entity.UserRole;
 import com.epam.igor.exception.ServiceException;
+import com.epam.igor.impl.EventServiceImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -27,9 +30,11 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Resource(lookup = "java:app/cinema/UserServiceImpl")
     private UserService userService;
+    private static final Logger LOGGER = LoggerFactory.getLogger(UserDetailsServiceImpl.class);
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        LOGGER.info("Security: load user by User name - " + username);
         com.epam.igor.entity.User user;
         List<GrantedAuthority> authorities;
         try {
@@ -47,7 +52,8 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     }
 
     private List<GrantedAuthority> buildUserAuthority(Set<UserRole> userRoles) {
-        Set<GrantedAuthority> setAuths = new HashSet<GrantedAuthority>();
+        LOGGER.info("build user authority : user roles - > " + userRoles);
+        Set<GrantedAuthority> setAuths = new HashSet<>();
         for (UserRole userRole : userRoles) {
             System.out.println(userRole.getRole());
             setAuths.add(new SimpleGrantedAuthority(userRole.getRole()));

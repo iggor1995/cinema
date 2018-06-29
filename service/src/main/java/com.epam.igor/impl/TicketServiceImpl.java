@@ -6,6 +6,8 @@ import com.epam.igor.dao.exception.DaoException;
 import com.epam.igor.entity.Event;
 import com.epam.igor.entity.Ticket;
 import com.epam.igor.exception.ServiceException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
@@ -16,6 +18,7 @@ import java.util.List;
 @Stateless
 public class TicketServiceImpl implements TicketService {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(TicketServiceImpl.class);
     private TicketDao ticketDao;
 
     @Inject
@@ -24,6 +27,7 @@ public class TicketServiceImpl implements TicketService {
     @Override
     public void createTicket(Ticket ticket) throws ServiceException {
         try {
+            LOGGER.info("Create ticket - " + ticket);
             ticketDao.createTicket(ticket);
         } catch (DaoException e) {
             throw new ServiceException("Cannot create Ticket", e);
@@ -32,7 +36,8 @@ public class TicketServiceImpl implements TicketService {
 
     @Override
     public List<String> getAvailableSeats(Event event) throws ServiceException {
-            List<Ticket> tickets;
+        LOGGER.info("Getting available seats");
+        List<Ticket> tickets;
             List<String> availableSeats = createSeatList(event.getAuditorium().getSeatsNumber());
             try {
                 tickets = ticketDao.getAll();

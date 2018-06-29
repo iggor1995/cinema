@@ -3,6 +3,8 @@ package com.epam.igor.dao.impl;
 import com.epam.igor.dao.api.AuditoriumDao;
 import com.epam.igor.dao.exception.DaoException;
 import com.epam.igor.entity.Auditorium;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.enterprise.context.Dependent;
 import javax.persistence.EntityManager;

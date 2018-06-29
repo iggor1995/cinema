@@ -12,6 +12,7 @@
         <class>com.epam.igor.entity.Event</class>
         <class>com.epam.igor.entity.Ticket</class>
         <class>com.epam.igor.entity.UserAccount</class>
+        <class>com.epam.igor.entity.Movie</class>
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>

@@ -1,13 +1,16 @@
 com\epam\igor\entity\Event.class
 com\epam\igor\entity\User.class
 com\epam\igor\entity\Rate.class
+com\epam\igor\converter\jsf\JSFLocalDateConverter.class
 com\epam\igor\entity\Auditorium.class
 com\epam\igor\entity\BaseEntity.class
 com\epam\igor\util\CsvUtil.class
 com\epam\igor\converter\DateTimeConverter.class
+com\epam\igor\validator\FileValidator.class
 com\epam\igor\converter\jsf\JSFLocalDateTimeConverter.class
 com\epam\igor\converter\RateConverter.class
 com\epam\igor\entity\UserRole.class
 com\epam\igor\converter\DateConverter.class
 com\epam\igor\entity\Ticket.class
+com\epam\igor\entity\Movie.class
 com\epam\igor\entity\UserAccount.class

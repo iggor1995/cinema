@@ -5,6 +5,8 @@ import com.epam.igor.dao.api.AuditoriumDao;
 import com.epam.igor.dao.exception.DaoException;
 import com.epam.igor.entity.Auditorium;
 import com.epam.igor.exception.ServiceException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
@@ -13,6 +15,7 @@ import javax.inject.Inject;
 public class AuditoriumServiceImpl implements AuditoriumService {
 
     private AuditoriumDao auditoriumDao;
+    private static final Logger LOGGER = LoggerFactory.getLogger(AuditoriumServiceImpl.class);
 
     @Inject
     public void setAuditoriumDao(AuditoriumDao auditoriumDao) {
