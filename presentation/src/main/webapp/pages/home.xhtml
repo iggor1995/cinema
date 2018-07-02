@@ -15,9 +15,11 @@
             <h:form id="userForm">
                 <h:panelGrid columns="2" cellpadding="5">
                     <label>name</label>
-                    <p:inputText id="userName" value="#{userManager.user.name}"/><br/>
+                    <p:inputText id="userName" value="#{userManager.user.name}"/>
+                    <br/>
                     <label>password</label>
-                    <p:inputText id="password" value="#{userManager.user.password}"/><br/>
+                    <p:inputText id="password" value="#{userManager.user.password}"/>
+                    <br/>
                     <p:commandButton value="SAVE"
                                      action="#{userManager.saveUser(userManager.user)}"/>
                 </h:panelGrid>
@@ -26,11 +28,14 @@
             <h:form id="auditoriumForm">
                 <h:panelGrid columns="2" cellpadding="5">
                     <label>name</label>
-                    <p:inputText id="auditoriumName" value="#{auditoriumManager.auditorium.name}"/><br/>
+                    <p:inputText id="auditoriumName" value="#{auditoriumManager.auditorium.name}"/>
+                    <br/>
                     <label>Seats number</label>
-                    <p:inputText id="seats" value="#{auditoriumManager.auditorium.seatsNumber}"/><br/>
+                    <p:inputText id="seats" value="#{auditoriumManager.auditorium.seatsNumber}"/>
+                    <br/>
                     <label>Seats number</label>
-                    <p:inputText id="vipSeats" value="#{auditoriumManager.auditorium.vipSeats}"/><br/>
+                    <p:inputText id="vipSeats" value="#{auditoriumManager.auditorium.vipSeats}"/>
+                    <br/>
                     <p:commandButton value="SAVE"
                                      action="#{auditoriumManager.saveAuditorium(auditoriumManager.auditorium)}"/>
                 </h:panelGrid>
@@ -41,22 +46,24 @@
                 <h:panelGrid columns="2" cellpadding="5">
 
                     <label>name</label>
-                    <p:inputText value="#{movieManager.movie.name}"/><br/>
+                    <p:inputText value="#{movieManager.movie.name}"/>
+                    <br/>
 
                     <label>Release date</label>
-                    <p:calendar id="movieDate" value="#{movieManager.movie.releaseDate}" pattern="MM/dd/yyyy" >
+                    <p:calendar id="movieDate" value="#{movieManager.movie.releaseDate}" pattern="MM/dd/yyyy">
                         <f:converter converterId="localDateFacesConverter"/>
                     </p:calendar>
 
                     <label>Description</label>
-                    <p:inputText id="movieDescription" value="#{movieManager.movie.description}"/><br/>
+                    <p:inputText id="movieDescription" value="#{movieManager.movie.description}"/>
+                    <br/>
                 </h:panelGrid>
 
-                    <label>Image</label>
-                    <h:inputFile id="file" value="#{movieManager.file}" >
-                        <f:validator validatorId="fileValidator"/>
-                    </h:inputFile>
-                    <h:message for="file"/>
+                <label>Image</label>
+                <h:inputFile id="file" value="#{movieManager.file}">
+                    <f:validator validatorId="fileValidator"/>
+                </h:inputFile>
+                <h:message for="file"/>
 
 
                 <h:commandButton value="Upload" action="#{movieManager.upload(movieManager.movie)}"/>

@@ -12,9 +12,6 @@ public class Event extends BaseEntity implements Serializable {
 
     private static final long serialVersionUID = -2692253546761426748L;
 
-    @Column(name = "name")
-    private String        name;
-
     @Column(name = "rate")
     private Rate          rate;
 
@@ -35,16 +32,12 @@ public class Event extends BaseEntity implements Serializable {
     @Column(name = "movie_id")
     private Long movieId;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "movie_id", insertable = false, updatable = false)
-    private Movie movie;
-
-    public Movie getMovie() {
-        return movie;
+    public Long getMovieId() {
+        return movieId;
     }
 
-    public void setMovie(Movie movie) {
-        this.movie = movie;
+    public void setMovieId(Long movieId) {
+        this.movieId = movieId;
     }
 
     public Long getAuditoriumId() {
@@ -53,14 +46,6 @@ public class Event extends BaseEntity implements Serializable {
 
     public void setAuditoriumId(Long auditoriumId) {
         this.auditoriumId = auditoriumId;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public Rate getRate() {

@@ -17,7 +17,7 @@
             <p:dataTable value="#{listManager.events}" var="value">
                 <p:column>
                     <f:facet name="header">Name</f:facet>
-                    <h:outputText value="#{value.name}"/><br/>
+                    <h:outputText value="#{( movieManager.getById(value.movieId) ).name}"/><br/>
                 </p:column>
                 <p:column>
                     <f:facet name="header">Rate</f:facet>
@@ -41,7 +41,7 @@
                                          value="Edit" action="#{eventManager.editEvent(value)}"/>
                     </p:column>
             </p:dataTable>
-            <p:commandButton rendered="#{request.isUserInRole('ROLE_ADMIN')}" value="Add event" action="/event-add.xhtml"/>
+            <p:commandButton rendered="#{request.isUserInRole('ROLE_ADMIN')}" value="Add event" action="/pages/admin/event/event-add?faces-redirect=true"/>
         </ui:define>
     </ui:composition>
 </h:body>

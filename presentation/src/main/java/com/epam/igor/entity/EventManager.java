@@ -1,6 +1,7 @@
 package com.epam.igor.entity;
 
 import com.epam.igor.api.EventService;
+import com.epam.igor.api.MovieService;
 import com.epam.igor.exception.ServiceException;
 import org.primefaces.model.DefaultStreamedContent;
 import org.primefaces.model.StreamedContent;
@@ -11,6 +12,7 @@ import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Produces;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import javax.faces.event.PhaseId;
 import javax.inject.Inject;
@@ -28,10 +30,13 @@ public class EventManager {
     private static final String HOME = "/pages/home?faces-redirect=true";
     private static final String EDIT_EVENT = "/pages/admin/event/event-edit?faces-redirect=true";
     private static final String SHOW_EVENT = "/pages/event-page?faces-redirect=true";
+    private static final String MANAGE_EVENTS = "/pages/admin/events-manage?faces-redirect=true";
     private static final String BOOK_EVENT_PAGE = "/pages/user/book-ticket?faces-redirect=true";
 
     @Inject
     private EventService eventService;
+    @Inject
+    private MovieService movieService;
     private Event event;
 
     @Produces
@@ -48,7 +53,7 @@ public class EventManager {
         this.event = new Event();
     }
 
-    public StreamedContent getImage() throws IOException {
+    public StreamedContent getImage() throws IOException, ServiceException {
         FacesContext context = FacesContext.getCurrentInstance();
 
         if (context.getCurrentPhaseId() == PhaseId.RENDER_RESPONSE) {
@@ -57,7 +62,7 @@ public class EventManager {
 
             ByteArrayOutputStream bos = new ByteArrayOutputStream();
 
-            byte[] image = event.getMovie().getImage();
+            byte[] image = movieService.getById(event.getMovieId()).getImage();
 
             return new DefaultStreamedContent(new ByteArrayInputStream(image),
                     "image/png");
@@ -75,7 +80,7 @@ public class EventManager {
         } catch (ServiceException e) {
             LOGGER.error("Cannot save event");
         }
-        return HOME;
+        return MANAGE_EVENTS;
     }
 
     public String saveEditEvent(Event event) {

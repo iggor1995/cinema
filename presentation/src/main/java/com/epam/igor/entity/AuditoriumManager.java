@@ -10,11 +10,14 @@ import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Produces;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
+import javax.faces.bean.SessionScoped;
+import javax.faces.bean.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
+import java.util.List;
 
 @ManagedBean
-@RequestScoped
+@SessionScoped
 public class AuditoriumManager {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AuditoriumManager.class);
@@ -44,4 +47,12 @@ public class AuditoriumManager {
         return HOME;
     }
 
+    public List<Auditorium> getAll(){
+        try {
+            return auditoriumService.getAll();
+        } catch (ServiceException e) {
+            LOGGER.error("Couldn't get all auditoriums");
+        }
+        return null;
+    }
 }

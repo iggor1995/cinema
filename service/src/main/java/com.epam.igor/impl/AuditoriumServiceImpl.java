@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
+import java.util.List;
 
 @Stateless
 public class AuditoriumServiceImpl implements AuditoriumService {
@@ -28,6 +29,15 @@ public class AuditoriumServiceImpl implements AuditoriumService {
             auditoriumDao.create(auditorium);
         } catch (DaoException e) {
             throw new ServiceException("Cannot create auditorium", e);
+        }
+    }
+
+    @Override
+    public List<Auditorium> getAll() throws ServiceException {
+        try {
+            return auditoriumDao.getAll();
+        } catch (DaoException e) {
+            throw new ServiceException("Couldn't get all auditoriums");
         }
     }
 }

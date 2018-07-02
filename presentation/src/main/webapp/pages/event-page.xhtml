@@ -38,6 +38,10 @@
                     <h:outputLabel for="eventAuditorium" value="#{message['event.auditorium']}"/><br/>
                     <h:outputText value="#{eventManager.event.auditorium.name}" id="eventAuditorium"/><br/>
                 </p:column>
+            <p:column>
+                <h:outputLabel for="movieDescription" value="Description"/><br/>
+                <h:outputText value="#{eventManager.event.movie.description}" id="movieDescription"/><br/>
+            </p:column>
             <p:commandButton value="book"
                              action="#{eventManager.showBookTicketPage(eventManager.event)}"/>
         </ui:define>
