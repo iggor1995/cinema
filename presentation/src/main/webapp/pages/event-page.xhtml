@@ -20,7 +20,7 @@
                 </p:column>
                 <p:column>
                     <h:outputLabel for="eventName" value="#{message['event.name']}"/><br/>
-                    <h:outputText value="#{eventManager.event.name}" id="eventName"/><br/>
+                    <h:outputText value="#{movieManager.getById(eventManager.event.movieId).name}" id="eventName"/><br/>
                 </p:column>
                 <p:column>
                     <h:outputLabel for="eventRate" value="#{message['event.rate']}"/><br/>
@@ -40,10 +40,9 @@
                 </p:column>
             <p:column>
                 <h:outputLabel for="movieDescription" value="Description"/><br/>
-                <h:outputText value="#{eventManager.event.movie.description}" id="movieDescription"/><br/>
+                <h:outputText value="#{movieManager.getById(eventManager.event.movieId).description}" id="movieDescription"/><br/>
             </p:column>
-            <p:commandButton value="book"
-                             action="#{eventManager.showBookTicketPage(eventManager.event)}"/>
+            <p:commandButton value="book" action="#{eventManager.showBookTicketPage(eventManager.event)}"/>
         </ui:define>
     </ui:composition>
 </h:body>

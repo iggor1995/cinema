@@ -12,7 +12,6 @@ import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Produces;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
-import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import javax.faces.event.PhaseId;
 import javax.inject.Inject;
@@ -20,7 +19,6 @@ import javax.inject.Named;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.sql.SQLException;
 
 @ManagedBean
 @SessionScoped
@@ -83,6 +81,10 @@ public class EventManager {
         return MANAGE_EVENTS;
     }
 
+    /**
+     * Method saves edited event
+     * @param event - edited object
+     */
     public String saveEditEvent(Event event) {
         try {
             eventService.editEvent(event);

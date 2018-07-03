@@ -59,7 +59,8 @@ public class TicketManager {
             ticket.setEventId(event.getId());
             User curUser = userService.getUserByName(name);
             ticket.setUserId(curUser.getId());
-
+            ticket.setPrice(event.getBasePrice());
+            System.out.println(ticket.toString() + " " + curUser.getName());
             if(userService.chargeUser(curUser, event.getBasePrice()))
                 ticketService.createTicket(ticket);
             LOGGER.debug("not enough money");

@@ -17,18 +17,13 @@
             <h:panelGroup layout="block">
                 <h:panelGrid id = "panel" columns = "1" border = "1"
                              cellpadding = "10" cellspacing = "1">
-
                     <f:facet name = "header">
                         <h:outputText value = "ADMIN BOARD"/>
                     </f:facet>
+                    <p:commandButton rendered="#{request.isUserInRole('ROLE_ADMIN')}" value="Manage movies" action="/pages/admin/movies-manage.xhtml"/>
                     <p:commandButton rendered="#{request.isUserInRole('ROLE_ADMIN')}" value="Manage events" action="/pages/admin/events-manage.xhtml"/>
                     <p:commandButton rendered="#{request.isUserInRole('ROLE_ADMIN')}" value="Manage tickets" action="/tickets-manage.xhtml"/>
                     <p:commandButton rendered="#{request.isUserInRole('ROLE_ADMIN')}" value="Manage users" action="/users-manage.xhtml"/>
-                    <f:facet name = "footer">
-                        <h:panelGroup style = "display:block; text-align:center">
-                            <h:commandButton id = "submit" value = "Submit" />
-                        </h:panelGroup>
-                    </f:facet>
                 </h:panelGrid>
             </h:panelGroup>
         </ui:define>

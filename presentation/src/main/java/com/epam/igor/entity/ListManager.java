@@ -1,6 +1,7 @@
 package com.epam.igor.entity;
 
 import com.epam.igor.api.EventService;
+import com.epam.igor.api.MovieService;
 import com.epam.igor.exception.ServiceException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,8 +19,14 @@ public class ListManager {
 
     @Inject
     private EventService eventService;
+    @Inject
+    private MovieService movieService;
 
     public List<Event> getEvents() throws ServiceException {
         return eventService.getAll();
+    }
+
+    public List<Movie> getMovies() throws ServiceException{
+        return movieService.getAll();
     }
 }

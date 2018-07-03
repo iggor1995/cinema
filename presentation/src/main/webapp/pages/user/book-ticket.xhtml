@@ -15,7 +15,7 @@
         <ui:define name="content">
             <h:panelGrid columns="2" cellpadding="5">
                 <label>#{message['event.name']}</label>
-                <h:outputText value="#{eventManager.event.name}" id="eventName"/><br/>
+                <h:outputText value="#{movieManager.getById(eventManager.event.movieId).name}" id="eventName"/><br/>
 
                 <label>#{message['event.rate']}</label>
                 <h:outputText value="#{eventManager.event.rate}" id="eventRate"/><br/>

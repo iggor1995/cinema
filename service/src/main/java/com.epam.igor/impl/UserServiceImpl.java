@@ -54,6 +54,10 @@ public class UserServiceImpl implements UserService {
             if(userAccount != null && userAccount.getCash() > price) {
                 userAccount.setCash(userAccount.getCash() - price);
                 userDao.updateAccount(userAccount);
+                return true;
+            }
+            else{
+                System.out.println(userAccount.getUserId() + " " + userAccount.getCash() + " " + price);
             }
         } catch (DaoException e) {
             throw new ServiceException("Couldn't update user account: user Id -> " + user.getId());
@@ -63,7 +67,6 @@ public class UserServiceImpl implements UserService {
 
     public UserAccount getUserAccount(long userId) throws ServiceException {
         try {
-            LOGGER.info("Create user id - " + userId);
             return  userDao.getUserAccountByUserId(userId);
         } catch (DaoException e) {
             throw new ServiceException("Couldn't get user account");

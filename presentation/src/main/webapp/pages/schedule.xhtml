@@ -17,7 +17,7 @@
             <p:dataTable value="#{listManager.events}" var="value">
                 <p:column>
                     <f:facet name="header">Name</f:facet>
-                    <h:outputText value="#{value.name}"/><br/>
+                    <h:outputText value="#{movieManager.getById(value.movieId).name}"/><br/>
                 </p:column>
                 <p:column>
                     <f:facet name="header">Rate</f:facet>
@@ -36,8 +36,7 @@
                     <h:outputText value="#{value.auditorium.name}"/><br/>
                 </p:column>
                 <p:column>
-                    <p:commandButton value="More"
-                                     action="#{eventManager.showEvent(value)}"/>
+                    <p:commandButton value="More" action="#{eventManager.showEvent(value)}"/>
                 </p:column>
             </p:dataTable>
         </ui:define>
