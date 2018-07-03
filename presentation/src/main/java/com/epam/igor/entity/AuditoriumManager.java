@@ -1,6 +1,5 @@
 package com.epam.igor.entity;
 
-
 import com.epam.igor.api.AuditoriumService;
 import com.epam.igor.exception.ServiceException;
 import org.slf4j.Logger;
@@ -9,9 +8,7 @@ import org.slf4j.LoggerFactory;
 import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Produces;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
 import javax.faces.bean.SessionScoped;
-import javax.faces.bean.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.List;
@@ -33,11 +30,19 @@ public class AuditoriumManager {
         return auditorium;
     }
 
+    /**
+     * initialize auditorium
+     */
     @PostConstruct
     public void init() {
         this.auditorium = new Auditorium();
     }
 
+    /**
+     * Method calls create service method
+     *
+     * @param auditorium - to create
+     */
     public String saveAuditorium(Auditorium auditorium) {
         try {
             auditoriumService.createAuditorium(auditorium);
@@ -47,7 +52,10 @@ public class AuditoriumManager {
         return HOME;
     }
 
-    public List<Auditorium> getAll(){
+    /**
+     * Get all auditoriums
+     */
+    public List<Auditorium> getAll() {
         try {
             return auditoriumService.getAll();
         } catch (ServiceException e) {

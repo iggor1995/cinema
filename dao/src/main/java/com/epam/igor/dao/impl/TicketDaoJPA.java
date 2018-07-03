@@ -2,7 +2,6 @@ package com.epam.igor.dao.impl;
 
 import com.epam.igor.dao.api.TicketDao;
 import com.epam.igor.dao.exception.DaoException;
-import com.epam.igor.entity.Event;
 import com.epam.igor.entity.Ticket;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,11 +25,11 @@ public class TicketDaoJPA implements TicketDao, Serializable {
 
     @Override
     public Ticket createTicket(Ticket ticket) throws DaoException {
-        try{
+        try {
             LOGGER.info("Save ticket to DB - " + ticket);
             entityManager.persist(ticket);
-        } catch (PersistenceException e){
-            throw  new DaoException("Not enough info to create ticket", e);
+        } catch (PersistenceException e) {
+            throw new DaoException("Not enough info to create ticket", e);
         }
         return ticket;
     }

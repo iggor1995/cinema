@@ -51,12 +51,11 @@ public class UserServiceImpl implements UserService {
         try {
             LOGGER.info("Charge user - " + user + " with price - " + price);
             UserAccount userAccount = getUserAccount(user.getId());
-            if(userAccount != null && userAccount.getCash() > price) {
+            if (userAccount != null && userAccount.getCash() > price) {
                 userAccount.setCash(userAccount.getCash() - price);
                 userDao.updateAccount(userAccount);
                 return true;
-            }
-            else{
+            } else {
                 System.out.println(userAccount.getUserId() + " " + userAccount.getCash() + " " + price);
             }
         } catch (DaoException e) {
@@ -67,7 +66,7 @@ public class UserServiceImpl implements UserService {
 
     public UserAccount getUserAccount(long userId) throws ServiceException {
         try {
-            return  userDao.getUserAccountByUserId(userId);
+            return userDao.getUserAccountByUserId(userId);
         } catch (DaoException e) {
             throw new ServiceException("Couldn't get user account");
         }

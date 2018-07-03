@@ -33,7 +33,7 @@ public class UserManager {
 
     @PostConstruct
     public void init() {
-            this.user = new User();
+        this.user = new User();
     }
 
     public String saveUser(User user) {
@@ -45,7 +45,10 @@ public class UserManager {
         return HOME;
     }
 
-    private User getUserWithDefaultValues(User user){
+    /**
+     * Set default values for creating user
+     */
+    private User getUserWithDefaultValues(User user) {
         UserRole defaultUserRole = new UserRole();
         defaultUserRole.setId(2L);
         defaultUserRole.setRole("ROLE_USER");

@@ -17,8 +17,6 @@ import javax.faces.event.PhaseId;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 
 @ManagedBean
 @SessionScoped
@@ -43,6 +41,10 @@ public class EventManager {
         return event;
     }
 
+    public void setEvent(Event event) {
+        this.event = event;
+    }
+
     /**
      * initialize event
      */
@@ -51,14 +53,15 @@ public class EventManager {
         this.event = new Event();
     }
 
-    public StreamedContent getImage() throws IOException, ServiceException {
+    /**
+     * Method returns stream of the image to display it on page
+     */
+    public StreamedContent getImage() throws ServiceException {
         FacesContext context = FacesContext.getCurrentInstance();
 
         if (context.getCurrentPhaseId() == PhaseId.RENDER_RESPONSE) {
             return new DefaultStreamedContent();
         } else {
-
-            ByteArrayOutputStream bos = new ByteArrayOutputStream();
 
             byte[] image = movieService.getById(event.getMovieId()).getImage();
 
@@ -69,6 +72,7 @@ public class EventManager {
 
     /**
      * Save new event
+     *
      * @param event - filled from the form
      * @return - return home page
      */
@@ -83,6 +87,7 @@ public class EventManager {
 
     /**
      * Method saves edited event
+     *
      * @param event - edited object
      */
     public String saveEditEvent(Event event) {
@@ -96,24 +101,33 @@ public class EventManager {
 
     /**
      * Edit current event
+     *
      * @param event - has to be edited
      * @return - return event-edit page
      */
-    public String editEvent(Event event){
+    public String editEvent(Event event) {
         this.event = event;
         return EDIT_EVENT;
     }
 
-    public String showEvent(Event event){
+    /**
+     * Set event, and return address of the event page
+     *
+     * @param event - event to show
+     * @return event address
+     */
+    public String showEvent(Event event) {
         this.event = event;
         return SHOW_EVENT;
     }
 
-    public void setEvent(Event event) {
-        this.event = event;
-    }
-
-    public String showBookTicketPage(Event event){
+    /**
+     * return booking page
+     *
+     * @param event set event to book
+     * @return book address
+     */
+    public String showBookTicketPage(Event event) {
         this.event = event;
         return BOOK_EVENT_PAGE;
     }

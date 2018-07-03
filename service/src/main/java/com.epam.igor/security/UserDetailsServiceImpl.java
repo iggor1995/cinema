@@ -3,7 +3,6 @@ package com.epam.igor.security;
 import com.epam.igor.api.UserService;
 import com.epam.igor.entity.UserRole;
 import com.epam.igor.exception.ServiceException;
-import com.epam.igor.impl.EventServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.ComponentScan;
@@ -28,9 +27,9 @@ import java.util.Set;
 @ComponentScan(basePackages = {"com.epam.igor.impl", "com.epam.igor.api"})
 public class UserDetailsServiceImpl implements UserDetailsService {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(UserDetailsServiceImpl.class);
     @Resource(lookup = "java:app/cinema/UserServiceImpl")
     private UserService userService;
-    private static final Logger LOGGER = LoggerFactory.getLogger(UserDetailsServiceImpl.class);
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -58,7 +57,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
             System.out.println(userRole.getRole());
             setAuths.add(new SimpleGrantedAuthority(userRole.getRole()));
         }
-        List<GrantedAuthority> Result = new ArrayList<GrantedAuthority>(setAuths);
+        List<GrantedAuthority> Result = new ArrayList<>(setAuths);
         return Result;
     }
 }

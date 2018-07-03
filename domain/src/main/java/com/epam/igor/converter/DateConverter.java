@@ -1,7 +1,6 @@
 package com.epam.igor.converter;
 
 
-
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
 import java.sql.Date;

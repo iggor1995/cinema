@@ -25,10 +25,10 @@ public class EventDaoJPA implements EventDao, Serializable {
 
     @Override
     public Event create(Event event) throws DaoException {
-        try{
+        try {
             LOGGER.info("Save event to db");
             entityManager.persist(event);
-        } catch (PersistenceException e){
+        } catch (PersistenceException e) {
             throw new DaoException("Cannot save new event", e);
         }
         return event;
@@ -36,10 +36,10 @@ public class EventDaoJPA implements EventDao, Serializable {
 
     @Override
     public Event edit(Event event) throws DaoException {
-        try{
+        try {
             LOGGER.info("Edit event in db");
             entityManager.merge(event);
-        } catch (PersistenceException e){
+        } catch (PersistenceException e) {
             throw new DaoException("Cannot save new event", e);
         }
         return event;

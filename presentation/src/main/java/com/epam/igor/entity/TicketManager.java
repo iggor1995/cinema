@@ -41,7 +41,7 @@ public class TicketManager {
         this.ticket = new Ticket();
     }
 
-    public String saveTicket(Ticket ticket){
+    public String saveTicket(Ticket ticket) {
         try {
             ticketService.createTicket(ticket);
         } catch (ServiceException e) {
@@ -50,7 +50,10 @@ public class TicketManager {
         return HOME;
     }
 
-    public String buyTicket(Event event, String name){
+    /**
+     * Set ticket parameters and create it
+     */
+    public String buyTicket(Event event, String name) {
         LOGGER.info("Buy action. Event - " + event + " userName - " + name);
         try {
             Ticket ticket = new Ticket();
@@ -61,7 +64,7 @@ public class TicketManager {
             ticket.setUserId(curUser.getId());
             ticket.setPrice(event.getBasePrice());
             System.out.println(ticket.toString() + " " + curUser.getName());
-            if(userService.chargeUser(curUser, event.getBasePrice()))
+            if (userService.chargeUser(curUser, event.getBasePrice()))
                 ticketService.createTicket(ticket);
             LOGGER.debug("not enough money");
         } catch (ServiceException e) {
@@ -70,7 +73,10 @@ public class TicketManager {
         return "/pages/home?faces-redirect=true";
     }
 
-    public List<String> getAvailableSeats(Event event){
+    /**
+     * Get available seats
+     */
+    public List<String> getAvailableSeats(Event event) {
         try {
             return ticketService.getAvailableSeats(event);
         } catch (ServiceException e) {

@@ -2,45 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66968e02-4158-4c27-8f0f-ac6538841fe8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/movie/movie-add.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/movie/movie-edit.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/movies-manage.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/epam/igor/dao/api/AuditoriumDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/epam/igor/dao/api/AuditoriumDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/epam/igor/dao/impl/AuditoriumDaoJPA.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/epam/igor/dao/impl/AuditoriumDaoJPA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/dao-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/dao-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/domain-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/domain-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/AuditoriumDaoJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/AuditoriumDaoJPA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/EventDaoJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/EventDaoJPA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/TicketDaoJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/TicketDaoJPA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/converter/DateConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/converter/DateConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/converter/jsf/JSFLocalDateTimeConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/converter/jsf/JSFLocalDateTimeConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/entity/Auditorium.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/entity/Auditorium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/entity/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/entity/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/entity/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/entity/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/entity/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/entity/UserAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/util/CsvUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/util/CsvUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/AuditoriumManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/AuditoriumManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/EventManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/EventManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/ListManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/ListManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/TicketManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/TicketManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/webapp/WEB-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/webapp/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/webapp/WEB-INF/faces-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/webapp/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/webapp/login.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/admin-cabinet.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/admin-cabinet.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/event/event-add.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/event/event-add.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/event/event-edit.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/event/event-edit.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/events-manage.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/events-manage.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/movie/movie-add.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/movie/movie-add.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/movie/movie-edit.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/movie/movie-edit.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/movies-manage.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/movies-manage.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/presentation/src/main/webapp/pages/event-page.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/webapp/pages/event-page.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/presentation/src/main/webapp/pages/home.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/webapp/pages/home.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/presentation/src/main/webapp/pages/register.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/webapp/pages/register.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/presentation/src/main/webapp/pages/schedule.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/webapp/pages/schedule.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/presentation/src/main/webapp/pages/user/book-ticket.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/webapp/pages/user/book-ticket.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/target/cinema.war" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/classes/com/epam/igor/entity/AuditoriumManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/classes/com/epam/igor/entity/AuditoriumManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/classes/com/epam/igor/entity/EventManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/classes/com/epam/igor/entity/EventManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/classes/com/epam/igor/entity/TicketManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/classes/com/epam/igor/entity/TicketManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/lib/domain-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/lib/domain-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/lib/service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/lib/service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/webapp/template/commonContent.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/webapp/template/commonContent.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/webapp/template/commonHeader.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/webapp/template/commonHeader.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/webapp/template/commonLayout.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/webapp/template/commonLayout.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/faces-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/target/cinema/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema/login.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/presentation/target/cinema/pages/home.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema/pages/home.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/presentation/target/cinema/pages/register.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema/pages/register.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/target/classes/com/epam/igor/entity/AuditoriumManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/classes/com/epam/igor/entity/AuditoriumManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/target/classes/com/epam/igor/entity/EventManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/classes/com/epam/igor/entity/EventManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/target/classes/com/epam/igor/entity/TicketManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/classes/com/epam/igor/entity/TicketManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/target/cinema/template/commonContent.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema/template/commonContent.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/target/cinema/template/commonHeader.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema/template/commonHeader.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/target/cinema/template/commonLayout.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema/template/commonLayout.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/api/AuditoriumService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/api/AuditoriumService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/api/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/api/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/AuditoriumServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/AuditoriumServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/EventServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/EventServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/TicketServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/epam/igor/api/AuditoriumService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/epam/igor/api/AuditoriumService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/epam/igor/impl/AuditoriumServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/epam/igor/impl/AuditoriumServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/epam/igor/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/epam/igor/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/security/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/security/UserDetailsServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,33 +83,83 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="movie-add.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/movie/movie-add.xhtml">
+      <file leaf-file-name="EventServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/EventServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="book-ticket.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/user/book-ticket.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="20" column="86" lean-forward="true" selection-start-line="20" selection-start-column="86" selection-end-line="20" selection-end-column="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TicketManager.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/TicketManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+            <state relative-caret-position="238">
+              <caret line="14" column="10" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#saveTicket#0;class#TicketManager#0" />
-                <element signature="method#getAvailableSeats#0;class#TicketManager#0" />
+                <element signature="e#627#628#0" expanded="true" />
+                <element signature="e#667#668#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventDaoJPA.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/EventDaoJPA.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="20" column="40" selection-start-line="20" selection-end-line="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TicketDaoJPA.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/TicketDaoJPA.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/UserManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+              <folding>
+                <element signature="method#saveUser#0;class#UserManager#0" />
+                <element signature="docComment;method#getUserWithDefaultValues#0;class#UserManager#0" />
+                <element signature="method#getUserWithDefaultValues#0;class#UserManager#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileValidator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/epam/igor/validator/FileValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CsvUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/epam/igor/util/CsvUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDetailsServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/security/UserDetailsServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="531">
+              <caret line="59" column="54" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,8 +168,8 @@
       <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="52" column="40" lean-forward="true" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+            <state relative-caret-position="408">
+              <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
               <folding>
                 <element signature="method#getUserByName#0;class#UserServiceImpl#0" />
                 <element signature="method#createUser#0;class#UserServiceImpl#0" />
@@ -113,7 +182,7 @@
         <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/TicketServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="40" column="62" selection-start-line="40" selection-start-column="62" selection-end-line="40" selection-end-column="62" />
+              <caret line="42" column="58" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
               <folding>
                 <element signature="method#createSeatList#0;class#TicketServiceImpl#0" />
                 <element signature="method#excludeUserSeats#0;class#TicketServiceImpl#0" />
@@ -122,11 +191,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/ListManager.java">
+      <file leaf-file-name="MovieServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/MovieServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="690">
+              <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,15 +229,12 @@
         <option value="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/entity/UserAccount.java" />
         <option value="$PROJECT_DIR$/domain/pom.xml" />
         <option value="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/entity/User.java" />
-        <option value="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/UserManager.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/api/TicketDao.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com.epam.igor/api/TicketService.java" />
         <option value="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/entity/Ticket.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/api/UserDao.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com.epam.igor/api/UserService.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/TicketServiceImpl.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/EventServiceImpl.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com.epam.igor/security/UserDetailsServiceImpl.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/TicketDaoJPA.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/EventDaoJPA.java" />
         <option value="$PROJECT_DIR$/presentation/src/main/resources/i18n.properties" />
@@ -179,11 +248,9 @@
         <option value="$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/AuditoriumDaoJPA.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com.epam.igor/api/AuditoriumService.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/AuditoriumServiceImpl.java" />
-        <option value="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/AuditoriumManager.java" />
         <option value="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/event/event-add.xhtml" />
         <option value="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/entity/Event.java" />
         <option value="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/events-manage.xhtml" />
-        <option value="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/ListManager.java" />
         <option value="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/admin-cabinet.xhtml" />
         <option value="$PROJECT_DIR$/service/src/main/java/com.epam.igor/api/MovieService.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/MovieServiceImpl.java" />
@@ -192,18 +259,23 @@
         <option value="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/movies-manage.xhtml" />
         <option value="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/validator/FileValidator.java" />
         <option value="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/entity/Movie.java" />
-        <option value="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/movie/movie-edit.xhtml" />
-        <option value="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/MovieManager.java" />
         <option value="$PROJECT_DIR$/presentation/src/main/webapp/pages/user/book-ticket.xhtml" />
         <option value="$PROJECT_DIR$/presentation/src/main/webapp/pages/schedule.xhtml" />
         <option value="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/event/event-edit.xhtml" />
         <option value="$PROJECT_DIR$/presentation/src/main/webapp/pages/register.xhtml" />
-        <option value="$PROJECT_DIR$/presentation/src/main/webapp/pages/home.xhtml" />
         <option value="$PROJECT_DIR$/presentation/src/main/webapp/pages/event-page.xhtml" />
         <option value="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/movie/movie-add.xhtml" />
-        <option value="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/EventManager.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/presentation/src/main/webapp/pages/home.xhtml" />
+        <option value="$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/movie/movie-edit.xhtml" />
+        <option value="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/EventManager.java" />
+        <option value="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/AuditoriumManager.java" />
+        <option value="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/ListManager.java" />
+        <option value="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/MovieManager.java" />
         <option value="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/TicketManager.java" />
+        <option value="$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/UserManager.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com.epam.igor/security/UserDetailsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/EventServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -462,15 +534,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="Resource Bundle 'i18n'" type="a6c14932:ResourceBundleNode" />
             </path>
             <path>
               <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
@@ -833,7 +896,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530504545305</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="clean up">
+      <created>1530609523416</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1530609523416</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -844,28 +914,29 @@
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="11" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info id="DB Browser" order="4" weight="0.15991472" />
-      <window_info id="Palette&#9;" order="10" />
-      <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Event Log" order="17" sideWeight="0.5021322" side_tool="true" weight="0.18409586" />
       <window_info anchor="right" id="Maven Projects" order="9" visible="true" weight="0.0836887" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4978678" visible="true" weight="0.18409586" />
-      <window_info anchor="bottom" id="Version Control" order="16" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="12" />
       <window_info anchor="right" id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18123667" />
       <window_info id="Project Explorer" order="2" />
       <window_info id="Job Explorer" order="8" />
       <window_info anchor="bottom" id="Console" order="14" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="12" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="DB Browser" order="4" weight="0.15991472" />
+      <window_info id="Palette&#9;" order="10" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" visible="true" weight="0.18409586" />
+      <window_info anchor="bottom" id="Version Control" order="16" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18123667" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="12" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Persistence" order="7" side_tool="true" />
       <window_info anchor="right" id="JSF" order="4" />
@@ -883,7 +954,6 @@
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49946696" weight="0.19281046" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32936078" />
       <window_info anchor="bottom" id="Spring" order="15" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info id="Web" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -911,11 +981,12 @@
     <MESSAGE value="adding movie entity, uploading image[not working yet]" />
     <MESSAGE value="uploading image works" />
     <MESSAGE value="Event: deleted name column, possible to add event by admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Event: deleted name column, possible to add event by admin" />
+    <MESSAGE value="clean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -923,137 +994,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/epam/igor/entity/Ticket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/security/UserDetailsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="32" column="62" selection-start-line="32" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/presentation/src/main/resources/i18n.properties">
-      <provider selected="true" editor-type-id="ResourceBundle" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domain/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/UserManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="36" column="5" selection-start-line="33" selection-start-column="2" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="method#saveUser#0;class#UserManager#0" />
-            <element signature="method#getUserWithDefaultValues#0;class#UserManager#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/epam/igor/converter/jsf/JSFLocalDateTimeConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/epam/igor/converter/DateTimeConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/epam/igor/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="method#equals#0;class#User#0" />
-            <element signature="method#hashCode#0;class#User#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/epam/igor/converter/jsf/JSFLocalDateConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/epam/igor/converter/DateConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-          <folding>
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/api/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/EventServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/AuditoriumDaoJPA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/api/AuditoriumDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/api/AuditoriumService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/AuditoriumServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/template/commonHeader.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -1061,34 +1001,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/EventDaoJPA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/UserDaoJPA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/TicketDaoJPA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="21" column="43" lean-forward="true" selection-start-line="21" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/AuditoriumManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1118,40 +1034,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/api/MovieDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/MovieServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/api/MovieService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/epam/igor/validator/FileValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1170,23 +1056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/MovieManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="91" column="13" lean-forward="true" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#editMovie#0;class#MovieManager#0" />
-            <element signature="method#getAll#0;class#MovieManager#0" />
-            <element signature="e#2791#2792#0" expanded="true" />
-            <element signature="e#2818#2819#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/template/commonLayout.xhtml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1204,105 +1073,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/home.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/event-page.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/movies-manage.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/api/EventService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/events-manage.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/admin-cabinet.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/movie/movie-edit.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/event/event-edit.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/event/event-add.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/ListManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/movie/movie-add.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/EventManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="58" column="16" lean-forward="true" selection-start-line="58" selection-start-column="16" selection-end-line="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#saveEvent#0;class#EventManager#0" />
-            <element signature="method#saveEvent#0;class#EventManager#0" />
-            <element signature="docComment;method#saveEditEvent#0;class#EventManager#0" />
-            <element signature="method#saveEditEvent#0;class#EventManager#0" />
-            <element signature="docComment;method#editEvent#0;class#EventManager#0" />
-            <element signature="method#editEvent#0;class#EventManager#0" />
-            <element signature="method#showEvent#0;class#EventManager#0" />
-            <element signature="method#showBookTicketPage#0;class#EventManager#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/user/book-ticket.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="20" column="86" lean-forward="true" selection-start-line="20" selection-start-column="86" selection-end-line="20" selection-end-column="86" />
         </state>
       </provider>
     </entry>
@@ -1313,14 +1087,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/TicketServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/api/AuditoriumDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="40" column="62" selection-start-line="40" selection-start-column="62" selection-end-line="40" selection-end-column="62" />
+        <state relative-caret-position="136">
+          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/api/EventDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/api/MovieDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding>
-            <element signature="method#createSeatList#0;class#TicketServiceImpl#0" />
-            <element signature="method#excludeUserSeats#0;class#TicketServiceImpl#0" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/api/TicketDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/api/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/exception/DaoException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/AuditoriumServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/exception/ServiceException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/config/SecurityWebApplicationInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1331,10 +1170,219 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/home.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/event/event-add.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/event/event-edit.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/movie/movie-add.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/movie/movie-edit.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/admin-cabinet.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/events-manage.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/admin/movies-manage.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/user/book-ticket.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="20" column="86" lean-forward="true" selection-start-line="20" selection-start-column="86" selection-end-line="20" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/pages/event-page.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/login.xhtml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/src/main/webapp/WEB-INF/faces-config.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/EventManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#getImage#0;class#EventManager#0" />
+            <element signature="method#getImage#0;class#EventManager#0" />
+            <element signature="docComment;method#saveEvent#0;class#EventManager#0" />
+            <element signature="method#saveEvent#0;class#EventManager#0" />
+            <element signature="docComment;method#saveEditEvent#0;class#EventManager#0" />
+            <element signature="method#saveEditEvent#0;class#EventManager#0" />
+            <element signature="docComment;method#editEvent#0;class#EventManager#0" />
+            <element signature="method#editEvent#0;class#EventManager#0" />
+            <element signature="docComment;method#showEvent#0;class#EventManager#0" />
+            <element signature="method#showEvent#0;class#EventManager#0" />
+            <element signature="docComment;method#showBookTicketPage#0;class#EventManager#0" />
+            <element signature="method#showBookTicketPage#0;class#EventManager#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/AuditoriumManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#init#0;class#AuditoriumManager#0" />
+            <element signature="docComment;method#saveAuditorium#0;class#AuditoriumManager#0" />
+            <element signature="method#saveAuditorium#0;class#AuditoriumManager#0" />
+            <element signature="docComment;method#getAll#0;class#AuditoriumManager#0" />
+            <element signature="method#getAll#0;class#AuditoriumManager#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/LanguageBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/ListManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <folding>
+            <element signature="docComment;method#getEvents#0;class#ListManager#0" />
+            <element signature="method#getEvents#0;class#ListManager#0" />
+            <element signature="docComment;method#getMovies#0;class#ListManager#0" />
+            <element signature="method#getMovies#0;class#ListManager#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/MovieManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#saveMovie#0;class#MovieManager#0" />
+            <element signature="method#saveMovie#0;class#MovieManager#0" />
+            <element signature="docComment;method#editMovie#0;class#MovieManager#0" />
+            <element signature="method#editMovie#0;class#MovieManager#0" />
+            <element signature="method#showEditMovie#0;class#MovieManager#0" />
+            <element signature="docComment;method#upload#0;class#MovieManager#0" />
+            <element signature="method#upload#0;class#MovieManager#0" />
+            <element signature="method#getAll#0;class#MovieManager#0" />
+            <element signature="method#setFile#0;class#MovieManager#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/TicketManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="75" column="4" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#saveTicket#0;class#TicketManager#0" />
+            <element signature="docComment;method#buyTicket#0;class#TicketManager#0" />
+            <element signature="method#buyTicket#0;class#TicketManager#0" />
+            <element signature="docComment;method#getAvailableSeats#0;class#TicketManager#0" />
+            <element signature="method#getAvailableSeats#0;class#TicketManager#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/UserManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+          <folding>
+            <element signature="method#saveUser#0;class#UserManager#0" />
+            <element signature="docComment;method#getUserWithDefaultValues#0;class#UserManager#0" />
+            <element signature="method#getUserWithDefaultValues#0;class#UserManager#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/epam/igor/validator/FileValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/com/epam/igor/util/CsvUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/security/UserDetailsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="59" column="54" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="52" column="40" lean-forward="true" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+        <state relative-caret-position="408">
+          <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
           <folding>
             <element signature="method#getUserByName#0;class#UserServiceImpl#0" />
             <element signature="method#createUser#0;class#UserServiceImpl#0" />
@@ -1342,15 +1390,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/TicketManager.java">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/TicketServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        <state relative-caret-position="459">
+          <caret line="42" column="58" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
+          <folding>
+            <element signature="method#createSeatList#0;class#TicketServiceImpl#0" />
+            <element signature="method#excludeUserSeats#0;class#TicketServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/MovieServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#saveTicket#0;class#TicketManager#0" />
-            <element signature="method#getAvailableSeats#0;class#TicketManager#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/EventServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/EventDaoJPA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="20" column="40" selection-start-line="20" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/TicketDaoJPA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="22" />
         </state>
       </provider>
     </entry>

@@ -19,7 +19,7 @@ public class EventServiceImpl implements EventService {
     private EventDao eventDao;
 
     @Inject
-    public void setEventDao(EventDao eventDao){
+    public void setEventDao(EventDao eventDao) {
         this.eventDao = eventDao;
     }
 
@@ -28,7 +28,7 @@ public class EventServiceImpl implements EventService {
         try {
             LOGGER.info("Create event - " + event);
             eventDao.create(event);
-        } catch (DaoException e){
+        } catch (DaoException e) {
             throw new ServiceException("Cannot save event", e);
         }
     }
@@ -38,7 +38,7 @@ public class EventServiceImpl implements EventService {
         try {
             LOGGER.info("Edit event - " + event);
             eventDao.edit(event);
-        } catch (DaoException e){
+        } catch (DaoException e) {
             throw new ServiceException("Cannot edit event", e);
         }
     }

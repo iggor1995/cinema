@@ -20,7 +20,7 @@ public class Auditorium extends BaseEntity implements Serializable {
     private String name;
 
     @Column(name = "seats_number")
-    private int    seatsNumber;
+    private int seatsNumber;
 
     @Column(name = "vip_seats")
     private String vipSeats;
@@ -45,16 +45,16 @@ public class Auditorium extends BaseEntity implements Serializable {
         return vipSeats;
     }
 
+    public void setVipSeats(String vipSeats) {
+        this.vipSeats = vipSeats;
+    }
+
     public List<Integer> getVipSeatsList() {
-        return CsvUtil.fromCsvToList(vipSeats, Integer:: valueOf);
+        return CsvUtil.fromCsvToList(vipSeats, Integer::valueOf);
     }
 
     public void setVipSeatsList(List<Integer> vipSeats) {
         this.vipSeats = CsvUtil.fromListToCsv(vipSeats);
-    }
-
-    public void setVipSeats(String vipSeats) {
-        this.vipSeats = vipSeats;
     }
 
     @Override

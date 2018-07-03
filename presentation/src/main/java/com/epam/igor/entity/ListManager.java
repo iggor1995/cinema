@@ -22,11 +22,17 @@ public class ListManager {
     @Inject
     private MovieService movieService;
 
+    /**
+     * Get all events
+     */
     public List<Event> getEvents() throws ServiceException {
         return eventService.getAll();
     }
 
-    public List<Movie> getMovies() throws ServiceException{
+    /**
+     * Get all movies
+     */
+    public List<Movie> getMovies() throws ServiceException {
         return movieService.getAll();
     }
 }

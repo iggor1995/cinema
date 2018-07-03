@@ -15,8 +15,8 @@ import java.util.List;
 @Stateless
 public class AuditoriumServiceImpl implements AuditoriumService {
 
-    private AuditoriumDao auditoriumDao;
     private static final Logger LOGGER = LoggerFactory.getLogger(AuditoriumServiceImpl.class);
+    private AuditoriumDao auditoriumDao;
 
     @Inject
     public void setAuditoriumDao(AuditoriumDao auditoriumDao) {

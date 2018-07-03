@@ -5,17 +5,12 @@ import javax.faces.context.FacesContext;
 import javax.faces.convert.ConverterException;
 import javax.faces.convert.DateTimeConverter;
 import javax.faces.convert.FacesConverter;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 
-/**
- * {@inheritDoc}
- *
- * @author Ilya_Bondarenko
- */
-@FacesConverter("localDateTimeFacesConverter")
-public class JSFLocalDateTimeConverter extends DateTimeConverter {
+@FacesConverter("localDateFacesConverter")
+public class JSFLocalDateConverter extends DateTimeConverter {
 
     /**
      * {@inheritDoc}
@@ -25,24 +20,24 @@ public class JSFLocalDateTimeConverter extends DateTimeConverter {
         if (null == stringValue || stringValue.isEmpty()) {
             return null;
         }
-        LocalDateTime localDateTime;
+        LocalDate localDate;
         try {
-            localDateTime = LocalDateTime.parse(stringValue, DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss"));
+            localDate = LocalDate.parse(stringValue, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
         } catch (DateTimeParseException e) {
             throw new ConverterException("Cannot get as object", e);
         }
-        return localDateTime;
+        return localDate;
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    public String getAsString(FacesContext context, UIComponent component, Object localDateTimeValue) {
-        if (null == localDateTimeValue) {
+    public String getAsString(FacesContext context, UIComponent component, Object localDateValue) {
+        if (null == localDateValue) {
             return "";
         }
-        return ((LocalDateTime) localDateTimeValue).format(DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss"));
+        return ((LocalDate) localDateValue).format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
     }
 
 

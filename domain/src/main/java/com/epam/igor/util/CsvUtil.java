@@ -14,6 +14,6 @@ public class CsvUtil {
     }
 
     public static <T> String fromListToCsv(List<T> list) {
-        return list.stream().map(Object:: toString).collect(Collectors.joining(DELIMITER));
+        return list.stream().map(Object::toString).collect(Collectors.joining(DELIMITER));
     }
 }

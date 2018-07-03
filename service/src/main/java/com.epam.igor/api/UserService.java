@@ -10,7 +10,7 @@ public interface UserService {
 
     User getUserByName(String name) throws ServiceException;
 
-    void createUser (User user) throws ServiceException;
+    void createUser(User user) throws ServiceException;
 
     boolean chargeUser(User user, double price) throws ServiceException;
 }

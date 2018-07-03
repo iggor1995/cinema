@@ -13,10 +13,10 @@ public class Event extends BaseEntity implements Serializable {
     private static final long serialVersionUID = -2692253546761426748L;
 
     @Column(name = "rate")
-    private Rate          rate;
+    private Rate rate;
 
     @Column(name = "base_price")
-    private double        basePrice;
+    private double basePrice;
 
     @Column(name = "date_time")
     @Convert(converter = DateTimeConverter.class)

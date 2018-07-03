@@ -9,23 +9,23 @@ public class Ticket extends BaseEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "event_id", insertable = false, updatable = false, nullable = false)
-    private Event         event;
+    private Event event;
 
     @Column(name = "seat")
     private String seat;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", insertable = false, updatable = false, nullable = false)
-    private User          user;
+    private User user;
 
     @Column(name = "price")
-    private Double        price;
+    private Double price;
 
     @Column(name = "event_id")
     private Long eventId;
 
     @Column(name = "user_id")
-    private  Long userId;
+    private Long userId;
 
     public Event getEvent() {
         return event;
