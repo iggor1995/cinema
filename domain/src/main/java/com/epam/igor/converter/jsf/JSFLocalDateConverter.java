@@ -12,9 +12,6 @@ import java.time.format.DateTimeParseException;
 @FacesConverter("localDateFacesConverter")
 public class JSFLocalDateConverter extends DateTimeConverter {
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public Object getAsObject(FacesContext context, UIComponent component, String stringValue) {
         if (null == stringValue || stringValue.isEmpty()) {
@@ -29,9 +26,6 @@ public class JSFLocalDateConverter extends DateTimeConverter {
         return localDate;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public String getAsString(FacesContext context, UIComponent component, Object localDateValue) {
         if (null == localDateValue) {

@@ -14,34 +14,24 @@
     <ui:composition template="/template/commonLayout.xhtml">
 
         <ui:define name="content">
-            <p:dataTable value="#{listManager.events}" var="value">
+            <p:dataTable value="#{movieManager.getAll()}" var="value">
                 <p:column>
                     <f:facet name="header">Name</f:facet>
-                    <h:outputText value="#{movieManager.getById(value.movieId).name}"/>
+                    <h:outputText value="#{value.name}"/>
                     <br/>
                 </p:column>
                 <p:column>
-                    <f:facet name="header">Rate</f:facet>
-                    <h:outputText value="#{value.rate}"/>
+                    <f:facet name="header">Release Date</f:facet>
+                    <h:outputText value="#{value.releaseDate}"/>
                     <br/>
                 </p:column>
                 <p:column>
-                    <f:facet name="header">Base price</f:facet>
-                    <h:outputText value="#{value.basePrice}"/>
+                    <f:facet name="header">Description</f:facet>
+                    <h:outputText value="#{value.description}"/>
                     <br/>
                 </p:column>
                 <p:column>
-                    <f:facet name="header">Date and time</f:facet>
-                    <h:outputText value="#{value.dateTime}"/>
-                    <br/>
-                </p:column>
-                <p:column>
-                    <f:facet name="header">Auditorium</f:facet>
-                    <h:outputText value="#{value.auditorium.name}"/>
-                    <br/>
-                </p:column>
-                <p:column>
-                    <p:commandButton value="More" action="#{eventManager.showEvent(value)}"/>
+                    <p:commandButton value="See air info" action="#{eventManager.showEventAirInfo(value.id)}"/>
                 </p:column>
             </p:dataTable>
         </ui:define>

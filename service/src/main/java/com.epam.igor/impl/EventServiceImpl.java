@@ -44,6 +44,16 @@ public class EventServiceImpl implements EventService {
     }
 
     @Override
+    public List<Event> getByMovieId(long movieId) throws ServiceException {
+        try {
+            eventDao.getByMovieId(movieId);
+        } catch (DaoException e) {
+            throw new ServiceException("Couldn't get event list");
+        }
+        return null;
+    }
+
+    @Override
     public List<Event> getAll() throws ServiceException {
         try {
             LOGGER.info("Get all events");

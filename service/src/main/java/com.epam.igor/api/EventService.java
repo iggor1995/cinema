@@ -12,4 +12,6 @@ public interface EventService {
     List<Event> getAll() throws ServiceException;
 
     void editEvent(Event event) throws ServiceException;
+
+    List<Event> getByMovieId(long movieId) throws ServiceException;
 }

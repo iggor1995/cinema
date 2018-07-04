@@ -3,8 +3,6 @@ package com.epam.igor.entity;
 import com.epam.igor.api.EventService;
 import com.epam.igor.api.MovieService;
 import com.epam.igor.exception.ServiceException;
-import org.primefaces.model.DefaultStreamedContent;
-import org.primefaces.model.StreamedContent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,11 +10,9 @@ import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Produces;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
-import javax.faces.context.FacesContext;
-import javax.faces.event.PhaseId;
 import javax.inject.Inject;
 import javax.inject.Named;
-import java.io.ByteArrayInputStream;
+import java.util.List;
 
 @ManagedBean
 @SessionScoped
@@ -28,6 +24,7 @@ public class EventManager {
     private static final String SHOW_EVENT = "/pages/event-page?faces-redirect=true";
     private static final String MANAGE_EVENTS = "/pages/admin/events-manage?faces-redirect=true";
     private static final String BOOK_EVENT_PAGE = "/pages/user/book-ticket?faces-redirect=true";
+    private static final String MOVIE_AIRS = "/pages/movie-airs?faces-redirect=true";
 
     @Inject
     private EventService eventService;
@@ -51,23 +48,6 @@ public class EventManager {
     @PostConstruct
     public void init() {
         this.event = new Event();
-    }
-
-    /**
-     * Method returns stream of the image to display it on page
-     */
-    public StreamedContent getImage() throws ServiceException {
-        FacesContext context = FacesContext.getCurrentInstance();
-
-        if (context.getCurrentPhaseId() == PhaseId.RENDER_RESPONSE) {
-            return new DefaultStreamedContent();
-        } else {
-
-            byte[] image = movieService.getById(event.getMovieId()).getImage();
-
-            return new DefaultStreamedContent(new ByteArrayInputStream(image),
-                    "image/png");
-        }
     }
 
     /**
@@ -130,5 +110,19 @@ public class EventManager {
     public String showBookTicketPage(Event event) {
         this.event = event;
         return BOOK_EVENT_PAGE;
+    }
+
+    public String showEventAirInfo(long movieId){
+        event.setMovieId(movieId);
+        return MOVIE_AIRS;
+    }
+
+    public List<Event> getEventsByMovieId(long movieId){
+        try {
+            eventService.getByMovieId(movieId);
+        } catch (ServiceException e) {
+            LOGGER.error("Couldn't get events");
+        }
+        return null;
     }
 }

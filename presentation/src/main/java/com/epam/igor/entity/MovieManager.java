@@ -3,6 +3,8 @@ package com.epam.igor.entity;
 
 import com.epam.igor.api.MovieService;
 import com.epam.igor.exception.ServiceException;
+import org.primefaces.model.DefaultStreamedContent;
+import org.primefaces.model.StreamedContent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,9 +12,12 @@ import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Produces;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.context.FacesContext;
+import javax.faces.event.PhaseId;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.servlet.http.Part;
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
@@ -127,6 +132,23 @@ public class MovieManager {
     public void setFile(Part file) {
         if (file != null) {
             this.file = file;
+        }
+    }
+
+    /**
+     * Method returns stream of the image to display it on page
+     */
+    public StreamedContent getImage(long movieId) throws ServiceException {
+        FacesContext context = FacesContext.getCurrentInstance();
+
+        if (context.getCurrentPhaseId() == PhaseId.RENDER_RESPONSE) {
+            return new DefaultStreamedContent();
+        } else {
+
+            byte[] image = movieService.getById(movieId).getImage();
+
+            return new DefaultStreamedContent(new ByteArrayInputStream(image),
+                    "image/png");
         }
     }
 }

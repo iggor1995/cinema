@@ -46,10 +46,22 @@ public class EventDaoJPA implements EventDao, Serializable {
     }
 
     @Override
+    public List<Event> getByMovieId(long movieId) throws DaoException {
+        LOGGER.info("Find events by movie id - " + movieId);
+        Query query = entityManager.createQuery("SELECT event from Event event where event.movieId LIKE :value");
+        query.setParameter("value", movieId + "");
+        List<Event> events = query.getResultList();
+        if (events == null) {
+            LOGGER.debug("No events found");
+        } else
+            LOGGER.debug("Found " + events.size() + "events");
+        return events;
+    }
+
+    @Override
     public List<Event> getAll() throws DaoException {
         LOGGER.info("Retrieve events from db");
         Query query = entityManager.createQuery("From Event", Event.class);
         return query.getResultList();
     }
-
 }

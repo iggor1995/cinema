@@ -12,4 +12,6 @@ public interface EventDao {
     List<Event> getAll() throws DaoException;
 
     Event edit(Event event) throws DaoException;
+
+    List<Event> getByMovieId(long movieId) throws DaoException;
 }

@@ -9,17 +9,9 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 
-/**
- * {@inheritDoc}
- *
- * @author Ilya_Bondarenko
- */
 @FacesConverter("localDateTimeFacesConverter")
 public class JSFLocalDateTimeConverter extends DateTimeConverter {
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public Object getAsObject(FacesContext context, UIComponent component, String stringValue) {
         if (null == stringValue || stringValue.isEmpty()) {
@@ -34,9 +26,6 @@ public class JSFLocalDateTimeConverter extends DateTimeConverter {
         return localDateTime;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public String getAsString(FacesContext context, UIComponent component, Object localDateTimeValue) {
         if (null == localDateTimeValue) {

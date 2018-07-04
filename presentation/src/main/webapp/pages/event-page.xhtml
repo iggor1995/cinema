@@ -15,7 +15,7 @@
 
         <ui:define name="content">
             <p:column>
-                <p:graphicImage value="#{eventManager.image}">
+                <p:graphicImage value="#{movieManager.getImage(eventManager.event.movieId)}">
                 </p:graphicImage>
                 <br/>
             </p:column>
