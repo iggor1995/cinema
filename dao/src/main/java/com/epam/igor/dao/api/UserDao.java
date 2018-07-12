@@ -20,4 +20,9 @@ public interface UserDao {
     UserAccount getUserAccountByUserId(long userId) throws DaoException;
 
     void updateAccount(UserAccount userAccount) throws DaoException;
+
+    void delete(User user) throws DaoException;
+
+    User findByID(long id) throws DaoException;
+
 }

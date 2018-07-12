@@ -36,15 +36,17 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void createUser(User user) throws ServiceException {
+    public long createUser(User user) throws ServiceException {
+        User registeredUser;
         try {
             LOGGER.info("Create user - " + user);
             UserAccount userAccount = new UserAccount();
             userAccount.setCash(5000);
-            userDao.create(user, userAccount);
+            registeredUser = userDao.create(user, userAccount);
         } catch (DaoException e) {
             throw new ServiceException("Cannot create user", e);
         }
+        return registeredUser.getId();
     }
 
     public boolean chargeUser(User user, double price) throws ServiceException {
@@ -62,6 +64,15 @@ public class UserServiceImpl implements UserService {
             throw new ServiceException("Couldn't update user account: user Id -> " + user.getId());
         }
         return false;
+    }
+
+    @Override
+    public User findById(long id) throws ServiceException {
+        try {
+           return userDao.findByID(id);
+        } catch (DaoException e) {
+            throw new ServiceException("Couldn't get user by id", e);
+        }
     }
 
     public UserAccount getUserAccount(long userId) throws ServiceException {

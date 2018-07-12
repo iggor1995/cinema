@@ -2,6 +2,7 @@ package com.epam.igor.dao.impl;
 
 import com.epam.igor.dao.api.UserDao;
 import com.epam.igor.dao.exception.DaoException;
+import com.epam.igor.entity.Movie;
 import com.epam.igor.entity.User;
 import com.epam.igor.entity.UserAccount;
 import org.slf4j.Logger;
@@ -71,5 +72,16 @@ public class UserDaoJPA implements UserDao, Serializable {
     public void updateAccount(UserAccount userAccount) throws DaoException {
         LOGGER.debug("Update user account");
         entityManager.merge(userAccount);
+    }
+
+    @Override
+    public void delete(User user) throws DaoException {
+        entityManager.remove(user);
+    }
+
+    @Override
+    public User findByID(long id) throws DaoException {
+        return entityManager.find(User.class, id);
+
     }
 }
