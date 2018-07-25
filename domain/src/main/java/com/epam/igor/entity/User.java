@@ -2,6 +2,7 @@ package com.epam.igor.entity;
 
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Objects;
@@ -9,6 +10,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "users")
+@XmlRootElement
 public class User extends BaseEntity implements Serializable {
 
     private static final long serialVersionUID = -2692253546761426748L;
