@@ -6,8 +6,8 @@ D:\Idea_Workspace\cinema\dao\src\main\java\com\epam\igor\dao\impl\TicketDaoJPA.j
 D:\Idea_Workspace\cinema\dao\src\main\java\com\epam\igor\dao\api\EventDao.java
 D:\Idea_Workspace\cinema\dao\src\main\java\com\epam\igor\dao\impl\UserDaoJPA.java
 D:\Idea_Workspace\cinema\dao\src\main\java\com\epam\igor\dao\exception\DaoException.java
-D:\Idea_Workspace\cinema\dao\src\main\java\com\epam\igor\dao\rest\UserWS.java
 D:\Idea_Workspace\cinema\dao\src\main\java\com\epam\igor\dao\rest\RestApplication.java
 D:\Idea_Workspace\cinema\dao\src\main\java\com\epam\igor\dao\api\MovieDao.java
 D:\Idea_Workspace\cinema\dao\src\main\java\com\epam\igor\dao\api\TicketDao.java
 D:\Idea_Workspace\cinema\dao\src\main\java\com\epam\igor\dao\impl\MovieDaoJPA.java
+D:\Idea_Workspace\cinema\dao\src\main\java\com\epam\igor\dao\rest\UserRestWS.java

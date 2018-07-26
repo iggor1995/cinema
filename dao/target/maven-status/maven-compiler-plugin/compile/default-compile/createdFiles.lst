@@ -5,9 +5,9 @@ com\epam\igor\dao\api\EventDao.class
 com\epam\igor\dao\impl\MovieDaoJPA.class
 com\epam\igor\dao\impl\TicketDaoJPA.class
 com\epam\igor\dao\impl\EventDaoJPA.class
+com\epam\igor\dao\rest\UserRestWS.class
 com\epam\igor\dao\api\MovieDao.class
 com\epam\igor\dao\exception\DaoException.class
 com\epam\igor\dao\impl\AuditoriumDaoJPA.class
-com\epam\igor\dao\rest\UserWS.class
 com\epam\igor\dao\api\UserDao.class
 com\epam\igor\dao\api\TicketDao.class

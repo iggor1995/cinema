@@ -1,4 +1,5 @@
 com\epam\igor\config\WebSecurityConfig.class
+com\epam\igor\soap\UserWs.class
 com\epam\igor\api\EventService.class
 com\epam\igor\impl\UserServiceImpl.class
 com\epam\igor\impl\AuditoriumServiceImpl.class
@@ -6,6 +7,7 @@ com\epam\igor\config\SecurityWebApplicationInitializer.class
 com\epam\igor\exception\ServiceException.class
 com\epam\igor\security\UserDetailsServiceImpl.class
 com\epam\igor\api\AuditoriumService.class
+com\epam\igor\soap\UserWsImpl.class
 com\epam\igor\impl\TicketServiceImpl.class
 com\epam\igor\api\MovieService.class
 com\epam\igor\api\UserService.class
