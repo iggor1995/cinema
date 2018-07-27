@@ -20,7 +20,6 @@ public class UserServiceImplTest {
 
     private UserDaoMock userDaoMock;
 
-    
     @Inject
     private UserService userService;
 
