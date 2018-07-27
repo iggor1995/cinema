@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="66968e02-4158-4c27-8f0f-ac6538841fe8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/test/java/com/epam/igor/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/test/java/com/epam/igor/UserServiceImplTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/presentation/test/java/com/epam/igor/UserServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#init#0;class#UserServiceImplTest#0" />
@@ -1083,7 +1082,21 @@
       <option name="project" value="LOCAL" />
       <updated>1532667691206</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="jenkins test">
+      <created>1532668368374</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1532668368374</updated>
+    </task>
+    <task id="LOCAL-00020" summary="jenkins test">
+      <created>1532669627705</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1532669627705</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1490,7 +1503,7 @@
     <entry file="file://$PROJECT_DIR$/presentation/test/java/com/epam/igor/UserServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#UserServiceImplTest#0" />
