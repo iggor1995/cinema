@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface MovieService {
 
-    void create(Movie movie) throws ServiceException;
+    Movie create(Movie movie) throws ServiceException;
 
     List<Movie> getAll() throws ServiceException;
 

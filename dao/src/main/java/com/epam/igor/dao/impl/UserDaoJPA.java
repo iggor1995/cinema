@@ -45,6 +45,7 @@ public class UserDaoJPA implements UserDao, Serializable {
             entityManager.persist(user);
             entityManager.flush();
             LOGGER.debug("Persist user - " + user);
+
             userAccount.setUserId(user.getId());
             entityManager.persist(userAccount);
             entityManager.flush();
@@ -69,9 +70,11 @@ public class UserDaoJPA implements UserDao, Serializable {
     }
 
     @Override
-    public void updateAccount(UserAccount userAccount) throws DaoException {
+    public UserAccount updateAccount(UserAccount userAccount) throws DaoException {
         LOGGER.debug("Update user account");
         entityManager.merge(userAccount);
+        entityManager.flush();
+        return userAccount;
     }
 
     @Override

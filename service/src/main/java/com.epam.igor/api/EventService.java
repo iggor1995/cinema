@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface EventService {
 
-    void createEvent(Event event) throws ServiceException;
+    Event createEvent(Event event) throws ServiceException;
 
     List<Event> getAll() throws ServiceException;
 

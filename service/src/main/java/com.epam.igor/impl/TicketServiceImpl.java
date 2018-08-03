@@ -27,13 +27,15 @@ public class TicketServiceImpl implements TicketService {
     }
 
     @Override
-    public void createTicket(Ticket ticket) throws ServiceException {
+    public Ticket createTicket(Ticket ticket) throws ServiceException {
+        Ticket newTicket;
         try {
             LOGGER.info("Create ticket - " + ticket);
-            ticketDao.createTicket(ticket);
+            newTicket = ticketDao.createTicket(ticket);
         } catch (DaoException e) {
             throw new ServiceException("Cannot create Ticket", e);
         }
+        return newTicket;
     }
 
     @Override

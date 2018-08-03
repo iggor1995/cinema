@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface TicketService {
 
-    void createTicket(Ticket ticket) throws ServiceException;
+    Ticket createTicket(Ticket ticket) throws ServiceException;
 
     List<String> getAvailableSeats(Event event) throws ServiceException;
 }

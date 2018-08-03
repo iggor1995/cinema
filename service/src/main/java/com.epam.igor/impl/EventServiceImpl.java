@@ -24,13 +24,15 @@ public class EventServiceImpl implements EventService {
     }
 
     @Override
-    public void createEvent(Event event) throws ServiceException {
+    public Event createEvent(Event event) throws ServiceException {
+        Event newEvent;
         try {
             LOGGER.info("Create event - " + event);
-            eventDao.create(event);
+            newEvent = eventDao.create(event);
         } catch (DaoException e) {
             throw new ServiceException("Cannot save event", e);
         }
+        return newEvent;
     }
 
     @Override
@@ -45,12 +47,13 @@ public class EventServiceImpl implements EventService {
 
     @Override
     public List<Event> getByMovieId(long movieId) throws ServiceException {
+        List<Event> events;
         try {
-            eventDao.getByMovieId(movieId);
+            events = eventDao.getByMovieId(movieId);
         } catch (DaoException e) {
             throw new ServiceException("Couldn't get event list");
         }
-        return null;
+        return events;
     }
 
     @Override

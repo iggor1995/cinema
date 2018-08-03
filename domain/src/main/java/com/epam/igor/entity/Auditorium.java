@@ -69,7 +69,6 @@ public class Auditorium extends BaseEntity implements Serializable {
 
     @Override
     public int hashCode() {
-
         return Objects.hash(name, seatsNumber, vipSeats);
     }
 }

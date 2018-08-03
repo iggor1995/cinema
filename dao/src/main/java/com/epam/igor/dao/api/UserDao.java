@@ -19,7 +19,7 @@ public interface UserDao {
 
     UserAccount getUserAccountByUserId(long userId) throws DaoException;
 
-    void updateAccount(UserAccount userAccount) throws DaoException;
+    UserAccount updateAccount(UserAccount userAccount) throws DaoException;
 
     void delete(User user) throws DaoException;
 

@@ -52,6 +52,4 @@ public class MovieDaoJPA implements MovieDao, Serializable {
     public void edit(Movie movie) {
         entityManager.merge(movie);
     }
-
-
 }

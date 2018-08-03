@@ -24,7 +24,6 @@ public class UserWsImpl implements UserWs {
     @Inject
     private UserService userService;
 
-
     @WebResult(name = "testUser")
     @WebMethod(operationName = "getUser")
     public User getUserById(long id){

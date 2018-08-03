@@ -5,6 +5,7 @@ import com.epam.igor.dao.api.MovieDao;
 import com.epam.igor.dao.exception.DaoException;
 import com.epam.igor.entity.Movie;
 import com.epam.igor.exception.ServiceException;
+import org.mockito.Mockito;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,15 +24,16 @@ public class MovieServiceImpl implements MovieService {
         this.movieDao = movieDao;
     }
 
-
     @Override
-    public void create(Movie movie) throws ServiceException {
+    public Movie create(Movie movie) throws ServiceException {
+        Movie newMovie;
         try {
             LOGGER.info("Create movie - " + movie);
-            movieDao.saveMovie(movie);
+            newMovie = movieDao.saveMovie(movie);
         } catch (DaoException e) {
             throw new ServiceException("Cannot save movie", e);
         }
+        return newMovie;
     }
 
     @Override
