@@ -2,54 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66968e02-4158-4c27-8f0f-ac6538841fe8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/presentation/test/java/com/epam/igor/UserManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/test/java/com/epam/igor/EventServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/test/java/com/epam/igor/MovieServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/test/java/com/epam/igor/TicketServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/test/java/com/epam/igor/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_10_19.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/api/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/api/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/MovieDaoJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/MovieDaoJPA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/UserDaoJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/UserDaoJPA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/epam/igor/dao/api/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/epam/igor/dao/api/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/epam/igor/dao/impl/UserDaoJPA.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/epam/igor/dao/impl/UserDaoJPA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/dao-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/dao-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/entity/Auditorium.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/epam/igor/entity/Auditorium.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/com/epam/igor/entity/Auditorium.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/com/epam/igor/entity/Auditorium.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/domain-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/domain-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/test/java/com/epam/igor/EventTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/test/java/com/epam/igor/UserTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/target/cinema.war" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/classes/com/epam/igor/entity/EventManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/classes/com/epam/igor/entity/EventManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/classes/com/epam/igor/entity/TicketManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/classes/com/epam/igor/entity/TicketManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/lib/domain-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/lib/domain-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/lib/service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/cinema/WEB-INF/lib/service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/target/classes/com/epam/igor/entity/EventManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/classes/com/epam/igor/entity/EventManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/target/classes/com/epam/igor/entity/TicketManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/classes/com/epam/igor/entity/TicketManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/test/java/com/epam/igor/UserDaoMock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/test/java/com/epam/igor/UserServiceImplTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/test/java/com/epam/igor/weld/WeldContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/test/java/com/epam/igor/weld/WeldJUnit4Runner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/api/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/api/EventService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/api/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/api/MovieService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/api/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/api/TicketService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/EventServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/EventServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/MovieServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/impl/TicketServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/soap/UserWsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com.epam.igor/soap/UserWsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/epam/igor/api/EventService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/epam/igor/api/EventService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/epam/igor/api/TicketService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/epam/igor/api/TicketService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/epam/igor/impl/EventServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/epam/igor/impl/EventServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/epam/igor/impl/TicketServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/epam/igor/impl/TicketServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/epam/igor/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/epam/igor/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/test/java/com/epam/igor/UserManagerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/test/resources/META-INF/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/test/resources/META-INF/persistence.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -77,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/UserManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
-              <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
               <folding>
                 <element signature="method#getUserWithDefaultValues#0;class#UserManager#0" />
               </folding>
@@ -89,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/UserDaoJPA.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <element signature="method#findByName#0;class#UserDaoJPA#0" />
                 <element signature="method#create#0;class#UserDaoJPA#0" />
@@ -105,26 +61,14 @@
       <file leaf-file-name="UserServiceTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/service/test/java/com/epam/igor/UserServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="43" />
+            <state relative-caret-position="223">
+              <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#init#0;class#UserServiceTest#0" />
                 <element signature="method#getUserByNameTest#0;class#UserServiceTest#0" />
                 <element signature="method#createUserTest#0;class#UserServiceTest#0" />
                 <element signature="method#findByIdTest#0;class#UserServiceTest#0" />
                 <element signature="method#chargeUserTest#0;class#UserServiceTest#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserManagerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/presentation/test/java/com/epam/igor/UserManagerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -436,27 +380,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="igor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
@@ -909,7 +832,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532671482429</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="added tests">
+      <created>1533291857293</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1533291857293</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1023,7 +953,8 @@
     <MESSAGE value="creating unit tests" />
     <MESSAGE value="added soap service" />
     <MESSAGE value="jenkins test" />
-    <option name="LAST_COMMIT_MESSAGE" value="jenkins test" />
+    <MESSAGE value="added tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1480,20 +1411,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/presentation/test/java/com/epam/igor/UserManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/presentation/src/main/java/com/epam/igor/entity/UserManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
           <folding>
             <element signature="method#getUserWithDefaultValues#0;class#UserManager#0" />
           </folding>
@@ -1503,7 +1424,7 @@
     <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/epam/igor/dao/impl/UserDaoJPA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="method#findByName#0;class#UserDaoJPA#0" />
             <element signature="method#create#0;class#UserDaoJPA#0" />
@@ -1515,12 +1436,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/test/java/com/epam/igor/UserServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/presentation/test/java/com/epam/igor/UserManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="43" />
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/test/java/com/epam/igor/UserServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding>
+            <element signature="method#init#0;class#UserServiceTest#0" />
             <element signature="method#getUserByNameTest#0;class#UserServiceTest#0" />
             <element signature="method#createUserTest#0;class#UserServiceTest#0" />
             <element signature="method#findByIdTest#0;class#UserServiceTest#0" />
