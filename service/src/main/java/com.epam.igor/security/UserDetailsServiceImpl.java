@@ -23,6 +23,7 @@ import java.util.Set;
 /**
  * Class implements method for working with user details for security
  */
+
 @Service("userDetailsServiceImpl")
 @ComponentScan(basePackages = {"com.epam.igor.impl", "com.epam.igor.api"})
 public class UserDetailsServiceImpl implements UserDetailsService {
