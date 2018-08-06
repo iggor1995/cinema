@@ -12,7 +12,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.UserDetailsService;
 
 @Configuration
-@ComponentScan({"com.epam.igor.security"})
+@ComponentScan({"com.epam.com.security"})
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {

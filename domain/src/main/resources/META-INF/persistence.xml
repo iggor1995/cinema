@@ -5,14 +5,14 @@
     <persistence-unit name="MyAppPU" transaction-type="JTA">
         <jta-data-source>java:jboss/datasources/MyAppDS</jta-data-source>
 
-        <class>com.epam.igor.entity.BaseEntity</class>
-        <class>com.epam.igor.entity.User</class>
-        <class>com.epam.igor.entity.UserRole</class>
-        <class>com.epam.igor.entity.Auditorium</class>
-        <class>com.epam.igor.entity.Event</class>
-        <class>com.epam.igor.entity.Ticket</class>
-        <class>com.epam.igor.entity.UserAccount</class>
-        <class>com.epam.igor.entity.Movie</class>
+        <class>com.epam.com.entity.BaseEntity</class>
+        <class>com.epam.com.entity.User</class>
+        <class>com.epam.com.entity.UserRole</class>
+        <class>com.epam.com.entity.Auditorium</class>
+        <class>com.epam.com.entity.Event</class>
+        <class>com.epam.com.entity.Ticket</class>
+        <class>com.epam.com.entity.UserAccount</class>
+        <class>com.epam.com.entity.Movie</class>
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
