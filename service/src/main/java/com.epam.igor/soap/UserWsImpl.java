@@ -16,7 +16,7 @@ import javax.jws.WebService;
 
 @Stateless
 @LocalBean
-@WebService(endpointInterface = "com.epam.com.soap.UserWs")
+@WebService(endpointInterface = "com.epam.igor.soap.UserWs")
 public class UserWsImpl implements UserWs {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(UserServiceImpl.class);
