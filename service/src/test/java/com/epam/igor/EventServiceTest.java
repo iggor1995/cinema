@@ -4,7 +4,6 @@ import com.epam.igor.dao.api.EventDao;
 import com.epam.igor.dao.exception.DaoException;
 import com.epam.igor.entity.Auditorium;
 import com.epam.igor.entity.Event;
-import com.epam.igor.entity.Movie;
 import com.epam.igor.entity.Rate;
 import com.epam.igor.exception.ServiceException;
 import com.epam.igor.impl.EventServiceImpl;

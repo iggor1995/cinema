@@ -53,6 +53,7 @@ public class UserServiceImpl implements UserService {
         try {
             LOGGER.info("Charge user - " + user + " with price - " + price);
             UserAccount userAccount = getUserAccount(user.getId());
+            
             if (userAccount != null && userAccount.getCash() > price) {
                 userAccount.setCash(userAccount.getCash() - price);
                 userDao.updateAccount(userAccount);

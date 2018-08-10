@@ -79,5 +79,4 @@ public class Event extends BaseEntity implements Serializable {
     public void setAuditorium(Auditorium auditorium) {
         this.auditorium = auditorium;
     }
-
 }

@@ -28,8 +28,10 @@ public class EventManager {
 
     @Inject
     private EventService eventService;
+
     @Inject
     private MovieService movieService;
+
     private Event event;
 
     @Produces
